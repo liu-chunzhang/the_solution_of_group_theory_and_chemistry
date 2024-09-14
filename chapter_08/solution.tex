@@ -1,0 +1,295 @@
+\documentclass[a4paper]{book}
+
+\usepackage{geometry}
+\geometry{%
+	left=2cm,%
+	right=2cm,%
+	top=2cm,%
+	bottom=2cm,%
+	bindingoffset=0cm}
+\usepackage{enumitem}	% 定制enumerate标号
+\usepackage[none]{hyphenat}	% 阻止长单词分在两行
+\usepackage{mathrsfs}	% 提供\mathscr字体
+
+\RequirePackage[many]{tcolorbox}
+\tcbset{
+    boxed title style={colback=magenta},
+	breakable,
+	enhanced,
+	sharp corners,
+	attach boxed title to top left={yshift=-\tcboxedtitleheight,  yshifttext=-.75\baselineskip},
+	boxed title style={boxsep=1pt,sharp corners},
+    fonttitle=\bfseries\sffamily,
+}
+
+\definecolor{skyblue}{rgb}{0.54, 0.81, 0.94}
+
+\newtcolorbox[auto counter, number within=chapter, number format=\arabic]{exercise}[1][]{
+    title={Exercise~\thetcbcounter},
+    colframe=skyblue,
+    colback=skyblue!12!white,
+    boxed title style={colback=skyblue},
+    overlay unbroken and first={
+        \node[below right,font=\small,color=skyblue,text width=.8\linewidth]
+        at (title.north east) {#1};
+    }
+}
+
+\newtcolorbox[auto counter, number within=chapter, number format=\arabic]{solution}[1][]{
+%    top=2ex,
+%    boxrule=0pt,
+%    leftrule=1.4pt,
+    title={Solution~\thetcbcounter},
+    colframe=teal!60!green,
+    colback=green!12!white,
+    boxed title style={colback=teal!60!green},
+    overlay unbroken and first={
+        \node[below right,font=\small,color=red,text width=.8\linewidth]
+        at (title.north east) {#1};
+    }
+}
+
+\begin{document}
+
+	\setcounter{chapter}{8}
+
+	\begin{exercise}
+		To what irreducible representations can the following direct product representations be reduced for the specified point group?
+		\begin{enumerate}[label=(\alph*)]
+		\item $\Gamma^{A_1}\otimes\Gamma^{A_1}$, $\Gamma^{A_1}\otimes\Gamma^{A_2}$, $\Gamma^{A_2}\otimes\Gamma^{E}$, $\Gamma^{E}\otimes\Gamma^{E}$ for $\mathscr{C}_{\rm 3v}$
+		\item $\Gamma^{E^\prime}\otimes\Gamma^{E^\prime}$, $\Gamma^{A^{\prime\prime}_1}\otimes\Gamma^{A^{\prime\prime}_2}$, $\Gamma^{A^{\prime\prime}_2}\otimes\Gamma^{E^{\prime\prime}}$ for $\mathscr{D}_{\rm 3h}$
+		\item $\Gamma^{E_1}\otimes\Gamma^{E_1}$, $\Gamma^{E_1}\otimes\Gamma^{E_2}$, $\Gamma^{E_2}\otimes\Gamma^{E_2}$ for $\mathscr{C}_{\rm 5v}$.
+		\end{enumerate}
+	\end{exercise}
+
+	\begin{solution}
+
+		There are two methods. I will apply one for the first issue and the other for the second and third issue.
+
+		\begin{enumerate}[label=(\alph*)]
+	
+		\item Firstly, we should show the character table. For $\mathscr{C}_{\rm 3v}$, it is
+		\begin{center}
+		\begin{tabular}{cccc}\hline
+	$\mathscr{C}_{\rm 3v}$ & $E$ & $2C_3$ & $3\sigma_v$ \\ \hline
+			$A_1$	&	1	&	1	&	1	\\
+			$A_2$	&	1	&	1	&	-1	\\
+			$E$		&	2	&	-1	&	0	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		With (8-3.6) and (8-3.10), if we assume
+		\begin{equation*}
+			\Gamma^{A_1} \otimes \Gamma^{A_1} = a_1 \Gamma^{A_1} \oplus a_2 \Gamma^{A_2} \oplus e \Gamma^{E},
+		\end{equation*}				
+		then for class $E$,
+		\begin{equation*}
+			\chi^{\Gamma^{A_1}\otimes\Gamma^{A_1}}(E) = \chi^{\Gamma^{A_1}}(E) \chi^{\Gamma^{A_1}}(E) = a_1 \chi^{A_1}(E) + a_2 \chi^{A_2}(E) + e \chi^{E}(E),
+		\end{equation*}
+		where $a_1$, $a_2$ and $e$ are variables to be solved, which can be simplified into
+		\begin{equation*}
+			1 \times a_1 + 1 \times a_2 + 2 \times e = 1 \times 1 = 1.
+		\end{equation*}
+		Similarly, for classes $2C_3$ and $3\sigma_v$, we obtain
+		\begin{align*}
+			a_1 + a_2 - e &= 1 , \\
+			a_1 - a_2 &= 1 .
+		\end{align*}
+		Solve the group of linear equations in form $Ax=b$,
+		\begin{equation*}
+			\begin{pmatrix}
+				1 & 1 & 2 \\
+				1 & 1 & -1 \\
+				1 & -1 & 0
+			\end{pmatrix}
+			\begin{pmatrix}
+				a_1 \\ a_2 \\ e
+			\end{pmatrix} =
+			\begin{pmatrix}
+				1 \\ 1 \\ 1
+			\end{pmatrix}
+		\end{equation*}
+		it is easy to find
+		\begin{equation*}
+			a_1 = 1 , \quad a_2 = 0 , \quad e = 0.
+		\end{equation*}
+		Thus,
+		\begin{equation}
+			\Gamma^{A_1} \otimes \Gamma^{A_1} = \Gamma^{A_1}.
+		\end{equation}
+		
+		In the same way, what we need to change for different direct products is the vector $b$. We can obtain
+		\begin{align}
+			\Gamma^{A_1}\otimes\Gamma^{A_2} &= \Gamma^{A_2}, \\
+			\Gamma^{A_2}\otimes\Gamma^{E} &= \Gamma^{E}, \\
+			\Gamma^{E}\otimes\Gamma^{E} &= \Gamma^{A_1} \oplus \Gamma^{A_2} \oplus \Gamma^{E}.
+		\end{align}
+		
+		\item Firstly, the character table of $\mathscr{D}_{\rm 3h}$ should be demonstrated.
+		\begin{center}
+		\begin{tabular}{ccccccc}\hline
+	$\mathscr{D}_{\rm 3h}$ & $E$ & $2C_3$ & $3C^\prime_2$ & $\sigma_h$ & $2S_3$ &$3\sigma_v$ \\ \hline
+			$A^\prime_1$	&	1	&	1	&	1	&	1	&	1	&	1	\\
+			$A^\prime_2$	&	1	&	1	&	-1	&	1	&	1	&	-1	\\
+			$E^\prime$		&	2	&	-1	&	0	&	2	&	-1	&	0	\\
+			$A^{\prime\prime}_1$	&	1	&	1	&	1	&	-1	&	-1	&	-1	\\
+			$A^{\prime\prime}_2$	&	1	&	1	&	-1	&	-1	&	-1	&	1	\\
+			$E^{\prime\prime}$	&	2	&	-1	&	0	&	-2	&	1	&	0	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		We can calculate reduction coefficients of direct product $\Gamma^{E^\prime}\otimes\Gamma^{E^\prime}$ via (8-3.11). For instance, for irreducible representation $A^\prime_1$,
+		\begin{align*}
+			a^\prime_{1} &= \frac{1}{12} ( 1 \times 2 \times 2 \times 1 + 2 \times (-1) \times (-1) \times 1 + 3 \times 0 \times 0 \times 1 \\
+			&\hspace{4em} + 1 \times 2 \times 2 \times 1 + 2 \times (-1) \times (-1) \times 1 + 3 \times 0 \times 0 \times 1 ) \\
+			&= \frac{1}{12} \times ( 4 + 2 + 0 + 4 + 2 + 0 ) = 1.
+		\end{align*}
+		In the same way, we can calculate others' reduction coefficients.
+		\begin{align*}
+			a^\prime_{2} &= \frac{1}{12} ( 4 + 2 - 0 + 4 + 2 - 0 )= 1, \\
+			e^\prime &= \frac{1}{12} ( 8 - 2 + 0 + 8 - 2 + 0 )= 1, \\
+			a^{\prime\prime}_{1} &= \frac{1}{12} ( 4 + 2 + 0 - 4 - 2 - 0 )= 0, \\
+			a^{\prime\prime}_{2} &= \frac{1}{12} ( 4 + 2 - 0 - 4 - 2 + 0 )= 0, \\
+			e^{\prime\prime} &= \frac{1}{12} ( 8 - 2 + 0 - 8 + 2 + 0 )= 0. 
+		\end{align*}
+		Finally, 
+		\begin{equation}
+			\Gamma^{E^\prime}\otimes\Gamma^{E^\prime} = \Gamma^{A^\prime_1} \oplus \Gamma^{A^\prime_2} \oplus \Gamma^{E^\prime}.
+		\end{equation}
+		Similarly,
+		\begin{align}
+			\Gamma^{A^{\prime\prime}_1}\otimes \Gamma^{A^{\prime\prime}_2} &= \Gamma^{A^{\prime}_2}, \\
+			\Gamma^{A^{\prime\prime}_2}\otimes \Gamma^{E^{\prime\prime}} &= \Gamma^{E^{\prime}}.
+		\end{align}
+		
+		\item Firstly, the character table of $\mathscr{C}_{\rm 5v}$ should be shown.
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{C}_{\rm 5v}$ & $E$ & $2C_5$ & $2C^2_5$ & $5\sigma_v$ \\ \hline
+			$A_1$	&	1	&	1	&	1	&	1	\\
+			$A_2$	&	1	&	1	&	1	&	-1	\\
+			$E_1$	&	2	&	2$\cos{\frac{2\pi}{5}}$	&	2$\cos{\frac{4\pi}{5}}$	&	0	\\
+			$E_2$	&	2	&	2$\cos{\frac{4\pi}{5}}$	&	2$\cos{\frac{2\pi}{5}}$	&	0	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		Here, we should note
+		\begin{align*}
+			\cos{36^\circ} &= \cos{\frac{\pi}{5}} = \frac{\sqrt{5}+1}{4},	\\
+			\cos{72^\circ} &=\cos{\frac{2\pi}{5}} = \frac{\sqrt{5}-1}{4}.
+\end{align*}				
+		
+		The calculation process is omitted. The result is
+		\begin{align}
+			\Gamma^{E_1}\otimes\Gamma^{E_1} &= \Gamma^{A_1}\oplus \Gamma^{A_2} \oplus \Gamma^{E_2}, \\
+			\Gamma^{E_1}\otimes\Gamma^{E_2} &= \Gamma^{E_1}\oplus \Gamma^{E_2}, \\
+			\Gamma^{E_2}\otimes\Gamma^{E_2} &= \Gamma^{A_1}\oplus \Gamma^{A_2} \oplus \Gamma^{E_1}.
+		\end{align}
+		
+		\end{enumerate}				
+		
+	\end{solution}
+
+	\begin{exercise}
+		To what irreducible representation must $\psi^\sigma$ belong if the integral
+		\begin{equation*}
+			\int \psi^\sigma(X)^* F^\lambda(X) \psi^\rho (X) {\rm d}\tau
+		\end{equation*}
+		is to be non-zero in the following cases?
+		\begin{enumerate}[label=(\alph*)]
+		\item $\mathscr{C}_{\rm 4v}$  $\Gamma^\lambda = \Gamma^E$; $\Gamma^\rho = \Gamma^{A_1}$, $\Gamma^{A_2}$, $\Gamma^{B_1}$, $\Gamma^{B_2}$
+		\item $\mathscr{D}_{\rm 6h}$  $\Gamma^\lambda = \Gamma^{E_{1u}}$; $\Gamma^\rho = \Gamma^{E_{2u}}$
+		\item $\mathscr{T}_{\rm d}$  $\Gamma^\lambda = \Gamma^{T_2}$; $\Gamma^\rho = \Gamma^{A_2}$, $\Gamma^{E}$, $\Gamma^{T_1}$, $\Gamma^{T_2}$.
+		\end{enumerate}
+		
+	\end{exercise}
+	
+	\begin{solution}
+	
+		We should solve the reduction of these direct products. The irreducible representations included in these results are what we want.
+		
+		\begin{enumerate}[label=(\alph*)]
+		
+		\item The character table of the point group $\mathscr{C}_{\rm 4v}$ is shown below.
+		\begin{center}
+		\begin{tabular}{cccccc}\hline
+	$\mathscr{C}_{\rm 4v}$ & $E$ & $2C_4$ & $C_2$ & $2\sigma_v$ & $2\sigma_d$ \\ \hline
+			$A_1$	&	1	&	1	&	1	&	1	&	1	\\
+			$A_2$	&	1	&	1	&	1	&	-1	&	-1	\\
+			$B_1$	&	1	&	-1	&	1	&	1	&	-1	\\
+			$B_2$	&	1	&	-1	&	1	&	-1	&	1	\\
+			$E$		&	2	&	0	&	-2	&	0	&	0\\ \hline
+		\end{tabular}
+		\end{center}
+		Thus, in the same way,
+		\begin{align}
+			\Gamma^{E} \otimes \Gamma^{A_1} &= \Gamma^E , \\
+			\Gamma^{E} \otimes \Gamma^{A_2} &= \Gamma^E , \\
+			\Gamma^{E} \otimes \Gamma^{B_1} &= \Gamma^E , \\
+			\Gamma^{E} \otimes \Gamma^{B_2} &= \Gamma^E .
+		\end{align}
+		
+		Finally, we conclude that only $\psi^\sigma$ will belong to $\Gamma^E$ to obtain a non-zero integral if $\Gamma^\lambda = \Gamma^E$ and $\Gamma^\rho = \Gamma^{A_1}$. The same conclusion is suitable for cases where $\Gamma^\rho$ equals to $\Gamma^{A_2}$, $\Gamma^{B_1}$ or $\Gamma^{B_2}$.
+		
+		\item The character table of the point group $\mathscr{D}_{\rm 6h}$ is shown below.
+		\begin{center}
+		\begin{tabular}{ccccccccccccc}\hline
+	$\mathscr{D}_{\rm 6h}$ & $E$ & $2C_6$ & $2C_3$ & $C_2$ & $3C^\prime_2 $ & $3C^{\prime\prime}_2$ & $i$ & $2S_3$ & $2S_6$ & $\sigma_h$ & $3\sigma_d$ & $3\sigma_v$ \\ \hline
+			$A_{1g}$ & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+			$A_{2g}$ & 1 & 1 & 1 & 1 & -1 & -1 & 1 & 1 & 1 & 1 & -1 & -1 \\
+			$B_{1g}$ & 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 \\
+			$B_{2g}$ & 1 & -1 & 1 & -1 & -1 & 1 & 1 & -1 & 1 & -1 & -1 & 1 \\
+			$E_{1g}$ & 2 & 1 & -1 & -2 & 0 & 0 & 2 & 1 & -1 & -2 & 0 & 0 \\
+			$E_{2g}$ & 2 & -1 & -1 & 2 & 0 & 0 & 2 & -1 & -1 & 2 & 0 & 0 \\
+			$A_{1u}$ & 1 & 1 & 1 & 1 & 1 & 1 & -1 & -1 & -1 & -1 & -1 & -1 \\
+			$A_{2u}$ & 1 & 1 & 1 & 1 & -1 & -1 & -1 & -1 & -1 & -1 & 1 & 1 \\
+			$B_{1u}$ & 1 & -1 & 1 & -1 & 1 & -1 & -1 & 1 & -1 & 1 & -1 & 1 \\
+			$B_{2u}$ & 1 & -1 & 1 & -1 & -1 & 1 & -1 & 1 & -1 & 1 & 1 & -1 \\
+			$E_{1u}$ & 2 & 1 & -1 & -2 & 0 & 0 & -2 & -1 & 1 & 2 & 0 & 0 \\
+			$E_{2u}$ & 2 & -1 & -1 & 2 & 0 & 0 & -2 & 1 & 1 & -2 & 0 & 0 \\ \hline
+		\end{tabular}
+		\end{center}
+		Thus, in the same way,
+		\begin{align}
+			\Gamma^{E_{1u}} \otimes \Gamma^{E_{2u}} &= \Gamma^{B_{1g}} \oplus \Gamma^{B_{2g}} \oplus \Gamma^{E_{1g}}.
+		\end{align}
+		
+		Finally, we conclude that only $\psi^\sigma$ will belong to $\Gamma^{B_{1g}}$, $\Gamma^{B_{2g}}$ or $\Gamma^{E_{1g}}$ to obtain a non-zero integral if $\Gamma^\lambda = \Gamma^{E_{1u}}$ and $\Gamma^\rho = \Gamma^{E_{2u}}$.
+		
+		\item The character table of the point group $\mathscr{T}_{\rm d}$ is shown below.
+		\begin{center}
+		\begin{tabular}{cccccc}\hline
+	$\mathscr{T}_{\rm d}$ & $E$ & $8C_3$ & $3C_2$ & $6S_4$ & $6\sigma_d$ \\ \hline
+			$A_1$	&	1	&	1	&	1	&	1	&	1	\\
+			$A_2$	&	1	&	1	&	1	&	-1	&	-1	\\
+			$E$		&	2	&	-1	&	2	&	0	&	0	\\
+			$T_1$	&	3	&	0	&	-1	&	1	&	-1	\\
+			$T_2$	&	3	&	0	&	-1	&	-1	&	1\\ \hline
+		\end{tabular}
+		\end{center}
+		Thus, in the same way,
+		\begin{align}
+			\Gamma^{T_2} \otimes \Gamma^{A_2} &= \Gamma^{T_1} , \\
+			\Gamma^{T_2} \otimes \Gamma^{E} &= \Gamma^{T_1} \oplus \Gamma^{T_2} , \\
+			\Gamma^{T_2} \otimes \Gamma^{T_1} &= \Gamma^{A_2} \oplus \Gamma^{E} \oplus \Gamma^{T_1} \oplus \Gamma^{T_2} , \\
+			\Gamma^{T_2} \otimes \Gamma^{T_2} &= \Gamma^{A_1} \oplus \Gamma^{E} \oplus \Gamma^{T_1} \oplus \Gamma^{T_2} .
+		\end{align}
+		
+		Finally, we conclude that 
+			\begin{enumerate}[label=(\arabic*)]
+			
+			\item Only $\psi^\sigma$ will belong to $\Gamma^{T_1}$ to obtain a non-zero integral if $\Gamma^\lambda = \Gamma^{T_2}$ and $\Gamma^\rho = \Gamma^{A_2}$.
+			
+			\item Only $\psi^\sigma$ will belong to $\Gamma^{T_1}$ or $\Gamma^{T_2}$ to obtain a non-zero integral if $\Gamma^\lambda = \Gamma^{T_2}$ and $\Gamma^\rho = \Gamma^{E}$.
+				
+			\item Only $\psi^\sigma$ will belong to $\Gamma^{A_2}$, $\Gamma^E$, $\Gamma^{T_1}$ or $\Gamma^{T_2}$ to obtain a non-zero integral if $\Gamma^\lambda = \Gamma^{T_2}$ and $\Gamma^\rho = \Gamma^{T_1}$.
+				
+			\item Only $\psi^\sigma$ will belong to $\Gamma^{A_1}$, $\Gamma^E$, $\Gamma^{T_1}$ or $\Gamma^{T_2}$ to obtain a non-zero integral if $\Gamma^\lambda = \Gamma^{T_2}$ and $\Gamma^\rho = \Gamma^{T_2}$.
+			
+			\end{enumerate}					
+		
+		\end{enumerate}
+	
+	\end{solution}
+
+\end{document}
