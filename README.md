@@ -1,0 +1,1 @@
+# the_solution_of_group_theory_and_chemistry
