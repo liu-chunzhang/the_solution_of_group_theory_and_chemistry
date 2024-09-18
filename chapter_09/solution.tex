@@ -1,0 +1,577 @@
+\documentclass[a4paper]{book}
+
+\usepackage{geometry}
+\geometry{%
+	left=2cm,%
+	right=2cm,%
+	top=2cm,%
+	bottom=2cm,%
+	bindingoffset=0cm}
+\usepackage{enumitem}	% 定制enumerate标号
+\usepackage[none]{hyphenat}	% 阻止长单词分在两行
+\usepackage{mathrsfs}	% 提供\mathscr字体
+\usepackage[version=4]{mhchem}
+
+\RequirePackage[many]{tcolorbox}
+\tcbset{
+    boxed title style={colback=magenta},
+	breakable,
+	enhanced,
+	sharp corners,
+	attach boxed title to top left={yshift=-\tcboxedtitleheight,  yshifttext=-.75\baselineskip},
+	boxed title style={boxsep=1pt,sharp corners},
+    fonttitle=\bfseries\sffamily,
+}
+
+\definecolor{skyblue}{rgb}{0.54, 0.81, 0.94}
+
+\newtcolorbox[auto counter, number within=chapter, number format=\arabic]{exercise}[1][]{
+    title={Exercise~\thetcbcounter},
+    colframe=skyblue,
+    colback=skyblue!12!white,
+    boxed title style={colback=skyblue},
+    overlay unbroken and first={
+        \node[below right,font=\small,color=skyblue,text width=.8\linewidth]
+        at (title.north east) {#1};
+    }
+}
+
+\newtcolorbox[auto counter, number within=chapter, number format=\arabic]{solution}[1][]{
+%    top=2ex,
+%    boxrule=0pt,
+%    leftrule=1.4pt,
+    title={Solution~\thetcbcounter},
+    colframe=teal!60!green,
+    colback=green!12!white,
+    boxed title style={colback=teal!60!green},
+    overlay unbroken and first={
+        \node[below right,font=\small,color=red,text width=.8\linewidth]
+        at (title.north east) {#1};
+    }
+}
+
+\newcommand{\AO}{{\rm AO}}
+\newcommand{\Heff}{H^{\rm eff,\pi}}
+\newcommand{\Hp}{H^\prime}
+\newcommand{\Sp}{S^\prime}
+
+\begin{document}
+
+	\setcounter{chapter}{10}
+
+	\begin{exercise}
+		For the following molecules, determine the point group and the symmetry of the MOs for the $\pi$-electrons, and, using H{\"u}ckel theory, obtain the MOs and orbital energies:
+		\begin{enumerate}[label=(\alph*)]
+		\item {\it trans}-1,3-butadiene,
+		\item ethylene,
+		\item cyclobutadiene,
+		\item cyclopentadienyl radical $\ce{C5H5}$,
+		\item naphthalene,
+		\item phenanthrene.
+		\end{enumerate}
+	\end{exercise}
+
+	\begin{solution}
+
+		I will solve these issues with H{\"u}ckel theory.
+
+		\begin{enumerate}[label=(\alph*)]
+	
+		\item 111111111111111
+		
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{C}_{\rm 2h}$ & $E$ & $C_2$ & $i$ & $\sigma_h$ \\ \hline
+			$A_g$	&	1	&	1	&	1	&	1	\\
+			$B_g$	&	1	&	-1	&	1	&	-1	\\
+			$A_u$	&	1	&	1	&	-1	&	-1	\\
+			$B_u$ 	&	1	&	-1	&	-1	&	1	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{C}_{\rm 2h}$ & $E$ & $C_2$ & $i$ & $\sigma_h$ \\ \hline
+	$\chi^{\AO}(C_i)$	&	4	&	0	&	0	&	-4	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{align*}
+		a_g &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{A_g}(R) = \frac{1}{4} \left[ 1 \times 4 \times 1 + 1 \times 0 \times 1 + 1 \times 0 \times 1 + 1 \times (-4) \times 1 \right] = 0, \\
+		b_g &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{B_g}(R) = \frac{1}{4} \left[ 1 \times 4 \times 1 + 1 \times 0 \times (-1) + 1 \times 0 \times 1 + 1 \times (-4) \times (-1) \right] = 2, \\
+		a_u &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{A_u}(R) = \frac{1}{4} \left[ 1 \times 4 \times 1 + 1 \times 0 \times 1 + 1 \times 0 \times (-1) + 1 \times (-4) \times (-1) \right] = 2, \\
+		b_u &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{B_u}(R) = \frac{1}{4} \left[ 1 \times 4 \times 1 + 1 \times 0 \times (-1) + 1 \times 0 \times (-1) + 1 \times (-4) \times 1 \right] = 0.
+		\end{align*}
+		
+		\begin{equation*}
+			\Gamma^{\AO} = 2 \Gamma^{B_g} \oplus 2 \Gamma^{A_u}.
+		\end{equation*}
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{C}_{\rm 2h}$ & $E$ & $C_2$ & $i$ & $\sigma_h$ \\ \hline
+			$\phi_1$	&	$\phi_1$	&	$\phi_4$	&	$-\phi_4$	&	$-\phi_1$	\\
+			$\phi_2$	&	$\phi_2$	&	$\phi_3$	&	$-\phi_3$	&	$-\phi_2$	\\	\hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{align*}
+		\Gamma^{B_g}\phi_1 &= \sum_{R} \chi^{B_g}(R) O_R \phi_1 = (O_E - O_{C_2} + O_{i} - O_{\sigma_h})\phi_1 = \phi_1 - \phi_4 + (-\phi_4) - (-\phi_1) = 2(\phi_1-\phi_4) , \\
+		\Gamma^{B_g}\phi_2 &= \sum_{R} \chi^{B_g}(R) O_R \phi_2 = (O_E - O_{C_2} + O_{i} - O_{\sigma_h})\phi_2 = \phi_2 - \phi_3 + (-\phi_3) - (-\phi_2) = 2(\phi_2-\phi_3) .
+		\end{align*}
+		
+		\begin{align*}
+		\phi^\prime_1 &= \frac{1}{\sqrt{2}} (\phi_1-\phi_4) , \\
+		\phi^\prime_2 &= \frac{1}{\sqrt{2}} (\phi_2-\phi_3) .
+		\end{align*}
+		
+		\begin{align*}
+		\Hp_{11} &= \int_{\omega} \frac{1}{\sqrt{2}}(\phi_1-\phi_4) \Heff \frac{1}{\sqrt{2}}(\phi_1-\phi_4) = \frac{1}{2} (\alpha + 0 + 0 + \alpha) = \alpha, \\
+		\Hp_{12} &= \int_{\omega} \frac{1}{\sqrt{2}}(\phi_1-\phi_4) \Heff \frac{1}{\sqrt{2}}(\phi_2-\phi_3) = \frac{1}{2} (\beta - 0 - 0 + \beta) = \beta, \\
+		\Hp_{22} &= \int_{\omega} \frac{1}{\sqrt{2}}(\phi_2-\phi_3) \Heff \frac{1}{\sqrt{2}}(\phi_2-\phi_3) = \frac{1}{2} (\alpha - \beta - \beta + \alpha) = \alpha - \beta, \\
+		\end{align*}
+
+		\begin{equation*}
+			\Hp_{B_g} = \begin{pmatrix}
+				\alpha	&	\beta \\ \beta & \alpha - \beta 
+			\end{pmatrix}.
+		\end{equation*}
+		
+		\begin{align*}
+			\det(\Hp_{B_g}-\varepsilon^\pi \Sp_{B_g}) = \begin{vmatrix}	
+			\alpha-\varepsilon^\pi	&	\beta \\ 
+			\beta & \alpha - \beta -\varepsilon^\pi	
+\end{vmatrix} = \beta^2
+\begin{vmatrix}
+			x & 1 \\ 1 & x -1			
+			\end{vmatrix} = \beta^2 ( x^x - x - 1 ) = 0,
+		\end{align*}
+		where
+		\begin{equation*}
+			x = \frac{\alpha-\varepsilon^\pi}{\beta},
+		\end{equation*}
+		
+		\begin{equation*}
+			\Delta_{B_g} = (-1)^2 - 4 \times 1 \times (-1) = 5,
+		\end{equation*}				
+		
+		\begin{equation*}
+			x_1 = \frac{1+\sqrt{5}}{2}, \quad x_2 = \frac{1-\sqrt{5}}{2}.
+		\end{equation*}
+		
+		\begin{align*}
+			\varepsilon_1 &= \alpha - x_1 \beta = \alpha - \frac{1+\sqrt{5}}{2} \beta \approx \alpha - 1.618 \beta , \\
+			\varepsilon_2 &= \alpha - x_2 \beta = \alpha - \frac{1-\sqrt{5}}{2} \beta = \alpha + \frac{\sqrt{5}-1}{2} \beta \approx \alpha + 0.618 \beta .
+		\end{align*}
+		
+		$\Hp_{B_g}-\varepsilon^\pi_1 \Sp_{B_g} = 0$
+		\begin{equation*}
+			\begin{pmatrix}
+				1	& \frac{-1+\sqrt{5}}{2}	\\	0	&	0
+			\end{pmatrix}
+		\end{equation*}				
+		
+		
+		\begin{equation*}
+			\Phi_1 = -\frac{\sqrt{5}-1}{2}\phi^\prime_1 + \phi^\prime_2.
+		\end{equation*}
+		
+		\begin{equation*}
+			\sum_{i} c^2_i = (-\frac{\sqrt{5}-1}{2})^2 + 1^2 = \frac{5-\sqrt{5}}{2}.
+		\end{equation*}
+		
+		\begin{align}
+			\Phi^\pi_1 &= \sqrt{ \frac{2}{5-\sqrt{5}} } \Phi_1 = -\frac{\sqrt{5}-1}{2}\phi^\prime_1 + \phi^\prime_2 \\
+			&= - \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} \phi^\prime_1 + \sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} \phi^\prime_2	\\
+			&= - \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{\sqrt{5}}}\phi_1  + \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{\sqrt{5}}} \phi_2 - \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{\sqrt{5}}} \phi_3 + \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{\sqrt{5}}} \phi_4 \\
+			&\approx -0.3717 \phi_1 + 0.6015 \phi_2 - 0.6015 \phi_3 + 0.3717 \phi_4.
+		\end{align}
+		
+		$\Hp_{B_g}-\varepsilon^\pi_2 \Sp_{B_g} = 0$
+		\begin{equation*}
+			\begin{pmatrix}
+				1	& \frac{-1-\sqrt{5}}{2}	\\	0	&	0
+			\end{pmatrix}
+		\end{equation*}		
+		
+		\begin{equation*}
+			\Phi_2 = \frac{\sqrt{5}+1}{2}\phi^\prime_1 + \phi^\prime_2.
+		\end{equation*}
+		
+		
+		\begin{align}
+			\Phi^\pi_2 &= \sqrt{ \frac{2}{5+\sqrt{5}} } \Phi_2 = \frac{\sqrt{5}+1}{2}\phi^\prime_1 + \phi^\prime_2 \\
+			&= \sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} \phi^\prime_1 + \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} \phi^\prime_2	\\
+			&= \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{\sqrt{5}}}\phi_1  + \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{\sqrt{5}}} \phi_2 - \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{\sqrt{5}}} \phi_3 - \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{\sqrt{5}}} \phi_4 \\
+			&\approx 0.6015\phi_1 + 0.3717 \phi_2 - 0.3717 \phi_3 -  0.6015\phi_4.
+		\end{align}
+		
+		\begin{align*}
+		\Gamma^{A_u}\phi_1 &= \sum_{R} \chi^{A_u}(R) O_R \phi_1 = (O_E + O_{C_2} - O_{i} - O_{\sigma_h})\phi_1 = \phi_1 + \phi_4 - (-\phi_4) - (-\phi_1) = 2(\phi_1+\phi_4) , \\
+		\Gamma^{A_u}\phi_2 &= \sum_{R} \chi^{A_u}(R) O_R \phi_2 = (O_E + O_{C_2} - O_{i} - O_{\sigma_h})\phi_2 = \phi_2 + \phi_3 - (-\phi_3) - (-\phi_2) = 2(\phi_2+\phi_3) .
+		\end{align*}
+		
+		\begin{align*}
+		\phi^\prime_3 &= \frac{1}{\sqrt{2}} (\phi_1+\phi_4) , \\
+		\phi^\prime_4 &= \frac{1}{\sqrt{2}} (\phi_2+\phi_3) .
+		\end{align*}
+		
+		\begin{equation*}
+			\Hp_{A_u} = \begin{pmatrix}
+				\alpha	&	\beta \\ \beta & \alpha + \beta 
+			\end{pmatrix}.
+		\end{equation*}
+		
+		\begin{align*}
+			\det(\Hp_{A_u}-\varepsilon^\pi \Sp_{A_u}) = \begin{vmatrix}	
+			\alpha-\varepsilon^\pi	&	\beta \\ 
+			\beta & \alpha + \beta -\varepsilon^\pi	
+\end{vmatrix} = \beta^2
+\begin{vmatrix}
+			x & 1 \\ 1 & x +1			
+			\end{vmatrix} = \beta^2 ( x^x + x - 1 ) = 0,
+		\end{align*}
+		
+		\begin{equation*}
+			\Delta_{A_u} = 1^2 - 4 \times 1 \times (-1) = 5,
+		\end{equation*}		
+		
+		\begin{equation*}
+			x_3 = \frac{-1+\sqrt{5}}{2}, \quad x_4 = \frac{-1-\sqrt{5}}{2}.
+		\end{equation*}
+		
+		\begin{align*}
+			\varepsilon_3 &= \alpha - x_3 \beta = \alpha - \frac{-1+\sqrt{5}}{2} \beta \approx \alpha - 0.618 \beta , \\
+			\varepsilon_4 &= \alpha - x_4 \beta = \alpha - \frac{-1-\sqrt{5}}{2} \beta = \alpha + \frac{\sqrt{5}+1}{2} \beta \approx \alpha + 1.618 \beta .
+		\end{align*}
+		
+		$\Hp_{A_u}-\varepsilon^\pi_3 \Sp_{A_u} = 0$
+		\begin{equation*}
+			\begin{pmatrix}
+				1	& \frac{1+\sqrt{5}}{2}	\\	0	&	0
+			\end{pmatrix}
+		\end{equation*}		
+		
+		\begin{equation*}
+			\Phi_3 = -\frac{\sqrt{5}+1}{2}\phi^\prime_3 + \phi^\prime_4.
+		\end{equation*}
+		
+		
+		\begin{align}
+			\Phi^\pi_3 &= \sqrt{ \frac{2}{5+\sqrt{5}} } \Phi_3 \\
+			&= -\sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} \phi^\prime_3 + \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} \phi^\prime_4	\\
+			&= -\frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{\sqrt{5}}}\phi_1  + \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{\sqrt{5}}} \phi_2 + \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{\sqrt{5}}} \phi_3 - \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{\sqrt{5}}} \phi_4 \\
+			&\approx -0.6015 \phi_1 + 0.3717 \phi_2 + 0.3717 \phi_3 - 0.6015 \phi_4.
+		\end{align}
+		
+		
+		$\Hp_{A_u}-\varepsilon^\pi_4 \Sp_{A_u} = 0$
+		\begin{equation*}
+			\begin{pmatrix}
+				1	& \frac{1-\sqrt{5}}{2}	\\	0	&	0
+			\end{pmatrix}
+		\end{equation*}		
+		
+		\begin{equation*}
+			\Phi_4 = \frac{\sqrt{5}-1}{2}\phi^\prime_3 + \phi^\prime_4.
+		\end{equation*}
+		
+		
+		\begin{align}
+			\Phi^\pi_4 &= \sqrt{ \frac{2}{5-\sqrt{5}} } \Phi_4 \\
+			&= \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} \phi^\prime_3 + \sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} \phi^\prime_4	\\
+			&= \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{\sqrt{5}}}\phi_1  + \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{\sqrt{5}}} \phi_2 + \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{\sqrt{5}}} \phi_3 + \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{\sqrt{5}}} \phi_4 \\
+			&\approx 0.3717 \phi_1 + 0.6015 \phi_2 + 0.6015 \phi_3 + 0.3717 \phi_4.
+		\end{align}
+		
+		Thus, we obtain all results, which are shown as following.
+		
+		\begin{center}
+		\begin{tabular}{ccccccc}\hline
+		order 	& orbital energy & irrep & $c_1$ & $c_2$ & $c_3$ &$c_4$ \\ \hline
+			1	&	$\alpha+1.618\beta$	&	$A_u$	&	0.3717	&	0.6015	&	0.6015	&	0.3717	\\
+			2	&	$\alpha+0.618\beta$	&	$B_g$	&	0.6015	&	0.3717	&	-0.3717	&	-0.6015	\\
+			3	&	$\alpha-0.618\beta$	&	$A_u$	&	-0.6015	&	0.3717	&	0.3717	&	-0.6015	\\
+			4	&	$\alpha-1.618\beta$	&	$B_g$	&	-0.3717	&	0.6015	&	-0.6015	&	0.3717	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		
+		
+		\item 22222222222222222
+		
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{D}_{\rm 2}$ & $E$ & $C_{2z}$ & $C_{2y}$ & $C_{2x}$ \\ \hline
+			$A$		&	1	&	1	&	1	&	1	\\
+			$B_1$	&	1	&	1	&	-1	&	-1	\\
+			$B_2$	&	1	&	-1	&	1	&	-1	\\
+			$B_3$ 	&	1	&	-1	&	-1	&	1	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{D}_{\rm 2}$ & $E$ & $C_{2z}$ & $C_{2y}$ & $C_{2x}$  \\ \hline
+	$\chi^{\AO}(C_i)$	&	2	&	0	&	0	&	-2	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{align*}
+		a &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{A}(R) = \frac{1}{4} \left[ 1 \times 2 \times 1 + 1 \times 0 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times 1 \right] = 0, \\
+		b_1	&= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{B_1}(R) = \frac{1}{4} \left[ 1 \times 2 \times 1 + 1 \times 0 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times (-1) \right] = 1, \\
+		b_2	&= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{B_2}(R) = \frac{1}{4} \left[ 1 \times 2 \times 1 + 1 \times 0 \times (-1) + 1 \times 0 \times 1 + 1 \times (-2) \times (-1) \right] = 1, \\
+		b_3	&= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{B_3}(R) = \frac{1}{4} \left[ 1 \times 2 \times 1 + 1 \times 0 \times (-1) + 1 \times 0 \times (-1) + 1 \times (-2) \times 1 \right] = 0.
+		\end{align*}
+		
+		\begin{equation*}
+			\Gamma^{\AO} = \Gamma^{B_1} \oplus \Gamma^{B_2}.
+		\end{equation*}
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{D}_{\rm 2}$ & $E$ & $C_{2z}$ & $C_{2y}$ & $C_{2x}$ \\ \hline
+			$\phi_1$	&	$\phi_1$	&	$\phi_2$	&	$-\phi_2$	&	$-\phi_1$	\\	\hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{equation*}
+		\Gamma^{B_1}\phi_1 = \sum_{R} \chi^{B_1}(R) O_R \phi_1 = (O_E + O_{C_{2z}} - O_{C_{2y}} - O_{C_{2x}})\phi_1 = \phi_1 +\phi_2 - (-\phi_2) - (-\phi_1) = 2(\phi_1 + \phi_2) .
+		\end{equation*}
+		
+		\begin{equation*}
+		\phi^\prime_1 = \frac{1}{2}(\phi_1 + \phi_2) .
+		\end{equation*}
+		
+		\begin{equation*}
+			\Heff = ( \alpha + \beta ).
+		\end{equation*}
+		
+		\begin{align}
+			\Psi^pi_1 &= \phi^\prime_1 = \frac{1}{2}(\phi_1 + \phi_2) \\
+			&\approx 0.7071 \phi_1 + 0.7071 \phi_2.
+		\end{align}
+		
+		
+		\begin{equation*}
+		\Gamma^{B_2}\phi_1 = \sum_{R} \chi^{B_2}(R) O_R \phi_1 = (O_E - O_{C_{2z}} + O_{C_{2y}} - O_{C_{2x}})\phi_1 = \phi_1 - \phi_2 + (-\phi_2) + (-\phi_1) = 2(\phi_1 - \phi_2) .
+		\end{equation*}
+		
+		\begin{equation*}
+		\phi^\prime_2 = \frac{1}{2}(\phi_1 - \phi_2) .
+		\end{equation*}
+		
+		\begin{equation*}
+			\Heff = ( \alpha - \beta ).
+		\end{equation*}
+		
+		\begin{align}
+			\Psi^pi_1 &= \phi^\prime_1 = \frac{1}{2}(\phi_1 - \phi_2) \\
+			&\approx 0.7071 \phi_1 - 0.7071 \phi_2.
+		\end{align}
+		
+		Thus, we obtain all results, which are shown as following.
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+		order 	& orbital energy & irrep & $c_1$ & $c_2$ \\ \hline
+			1	&	$\alpha+\beta$	&	$B_1$	&	0.7071	&	-0.7071	\\
+			2	&	$\alpha-\beta$	&	$B_2$	&	0.7071	&	-0.7071	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\item This solution is designed for cyclobutadiene anion instead of just cyclobutadiene.
+		
+		\begin{center}
+		\begin{tabular}{cccccc}\hline
+	$\mathscr{D}_{\rm 4}$ & $E$ & $2C_4$ &	$C_2$	& $2C^\prime_2$ & $2C^{\prime\prime}_2$ \\ \hline
+			$A_1$	&	1	&	1	&	1	&	1	&	1	\\
+			$A_1$	&	1	&	1	&	1	&	-1	&	-1	\\
+			$B_1$	&	1	&	-1	&	1	&	1	&	-1	\\
+			$B_2$	&	1	&	-1	&	1	&	-1	&	1	\\
+			$E$ 	&	2	&	0	&	2	&	0	&	0\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		\begin{center}
+		\begin{tabular}{cccccc}\hline
+	$\mathscr{D}_{\rm 4}$	& $E$ & $2C_4$ &	$C_2$	& $2C^\prime_2$ & $2C^{\prime\prime}_2$ \\ \hline
+	$\chi^{\AO}(C_i)$	&	4	&	0	&	0	&	0	&	-2	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{align*}
+		a_1 &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{A_1}(R) = \frac{1}{8} \left[ 1 \times 4 \times 1 + 2 \times 0 \times 1 + 1 \times 0 \times 1 + 2 \times 0 \times 1 + 2 \times (-2) \times 1 \right] = 0, \\		
+		a_2 &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{A_2}(R) = \frac{1}{8} \left[ 1 \times 4 \times 1 + 2 \times 0 \times 1 + 1 \times 0 \times 1 + 2 \times 0 \times (-1) + 2 \times (-2) \times (-1) \right] = 1, \\
+		b_1 &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_1}(R) = \frac{1}{8} \left[ 1 \times 4 \times 1 + 2 \times 0 \times (-1) + 1 \times 0 \times 1 + 2 \times 0 \times 1 + 2 \times (-2) \times (-1) \right] = 1, \\		
+		b_2 &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_2}(R) = \frac{1}{8} \left[ 1 \times 4 \times 1 + 2 \times 0 \times (-1) + 1 \times 0 \times 1 + 2 \times 0 \times (-1) + 2 \times (-2) \times 1 \right] = 0, \\
+		e &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{E}(R) = \frac{1}{8} \left[ 1 \times 4 \times 2 + 2 \times 0 \times 0 + 1 \times 0 \times (-2) + 2 \times 0 \times 1 + 2 \times (-2) \times 0 \right] = 1.
+		\end{align*}
+		
+		\begin{equation*}
+			\Gamma^{\AO} = \Gamma^{A_2} \oplus \Gamma^{B_1} \oplus \Gamma^{E}.
+		\end{equation*}
+		
+		\begin{center}
+		\begin{tabular}{ccccccccc}\hline
+	$\mathscr{D}_{\rm 4}$ & $E$ & $C_4$ & $C_2$ & $C^3_4$	&	$C^\prime_{2,1}$	&	$C^\prime_{2,2}$ &	$C^{\prime\prime}_{2,1}$	&	$C^{\prime\prime}_{2,2}$	\\ \hline
+			$\phi_1$	&	$\phi_1$	&	$\phi_2$	&	$\phi_3$	&	$\phi_4$	&	$-\phi_2$	&	$-\phi_4$	&	$-\phi_3$	&	$-\phi_1$	\\
+			$\phi_2$	&	$\phi_2$	&	$\phi_3$	&	$\phi_4$	&	$\phi_1$	&	$-\phi_1$	&	$-\phi_3$	&	$-\phi_2$	&	$-\phi_4$	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		
+		\item 444444444444444444
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{D}_{\rm 5}$ & $E$ & $2C_5$ &	$2C^2_5$	& $5C^\prime_2$ \\ \hline
+			$A_1$	&	1	&	1	&	1	&	1	\\
+			$A_2$	&	1	&	1	&	1	&	-1	\\
+			$E_1$ 	&	2	&$2\cos\alpha$	&	$2\cos2\alpha$	&	0	\\
+			$E_2$ 	&	2	&$2\cos2\alpha$	&	$2\cos\alpha$	&	0	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{D}_{\rm 5}$	& $E$ & $2C_5$ &	$2C^2_5$	& $5C^\prime_2$ \\ \hline
+	$\chi^{\AO}(C_i)$	&	5	&	0	&	0	&	-1	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{align*}
+		a_1 &= \frac{1}{10} \sum_{R} \chi^{\AO}(R) \chi^{A_1}(R) = \frac{1}{10} \left[ 1 \times 5 \times 1 + 2 \times 0 \times 1 + 2 \times 0 \times 1 + 5 \times (-1) \times 1 \right] = 0, \\		
+		a_2 &= \frac{1}{10} \sum_{R} \chi^{\AO}(R) \chi^{A_2}(R) = \frac{1}{10} \left[ 1 \times 5 \times 1 + 2 \times 0 \times 1 + 2 \times 0 \times 1 + 5 \times (-1) \times (-1) \right] = 1, \\
+		e_1 &= \frac{1}{10} \sum_{R} \chi^{\AO}(R) \chi^{E_1}(R) = \frac{1}{10} \left[ 1 \times 5 \times 2 + 2 \times 0 \times 2\cos\alpha + 2 \times 0 \times 2\cos2\alpha + 5 \times (-1) \times 0 \right] = 1, \\		
+		e_2 &= \frac{1}{10} \sum_{R} \chi^{\AO}(R) \chi^{E_2}(R) = \frac{1}{10} \left[ 1 \times 5 \times 2 + 2 \times 0 \times 2\cos2\alpha + 2 \times 0 \times 2\cos\alpha + 5 \times (-1) \times 0 \right] = 1, \\
+		\end{align*}
+		
+		\begin{equation*}
+			\Gamma^{\AO} = \Gamma^{A_2} \oplus \Gamma^{E_1} \oplus \Gamma^{E_2}.
+		\end{equation*}
+		
+		\begin{center}
+		\begin{tabular}{ccccccccccc}\hline
+	$\mathscr{D}_{\rm 5}$ & $E$ & $C^1_5$ & $C^2_5$ & $C^3_5$	&	$C^4_5$	&	$C^\prime_{2,1}$	&	$C^\prime_{2,2}$ &	$C^\prime_{2,3}$	&	$C^\prime_{2,4}$	&	$C^\prime_{2,5}$	\\ \hline
+			$\phi_1$	&	$\phi_1$	&	$\phi_2$	&	$\phi_3$	&	$\phi_4$	&	$\phi_5$	&	$-\phi_1$	&	$-\phi_3$	&	$-\phi_5$	&	$-\phi_2$	&	$-\phi_4$	\\
+			$\phi_2$	&	$\phi_2$	&	$\phi_3$	&	$\phi_4$	&	$\phi_5$	&	$\phi_1$	&	$-\phi_5$	&	$-\phi_2$	&	$-\phi_4$	&	$-\phi_1$	&	$-\phi_3$	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		\item 5555555555555555
+		
+		\begin{center}
+		\begin{tabular}{ccccccccc}\hline
+	$\mathscr{D}_{\rm 2h}$ & $E$ & $C_{2z}$ &	$C_{2y}$	& $C_{2x}$	&	$i$	$\sigma_{xy}$	&	$\sigma_{xz}$	&	$\sigma_{xz}$ &	$\sigma_{yz}$\\ \hline
+			$A_g$		&	1	&	1	&	1	&	1	&	1	&	1	&	1	&	1	\\
+			$B_{1g}$	&	1	&	1	&	-1	&	-1	&	1	&	1	&	-1	&	-1	\\
+			$B_{2g}$ 	&	1	&	-1	&	1	&	-1	&	1	&	-1	&	1	&	-1	\\
+			$B_{3g}$ 	&	1	&	-1	&	-1	&	1	&	1	&	-1	&	-1	&	1	\\ 
+			$A_u$		&	1	&	1	&	1	&	1	&	-1	&	-1	&	-1	&	-1	\\
+			$B_{1u}$	&	1	&	1	&	-1	&	-1	&	-1	&	-1	&	1	&	1	\\
+			$B_{2u}$ 	&	1	&	-1	&	1	&	-1	&	-1	&	1	&	-1	&	1	\\
+			$B_{3u}$ 	&	1	&	-1	&	-1	&	1	&	-1	&	1	&	1	&	-1	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		\begin{center}
+		\begin{tabular}{ccccccccc}\hline
+	$\mathscr{D}_{\rm 2h}$	& $E$ & $C_{2z}$ &	$C_{2y}$	& $C_{2x}$	&	$i$	$\sigma_{xy}$	&	$\sigma_{xz}$	&	$\sigma_{xz}$ &	$\sigma_{yz}$  \\ \hline
+	$\chi^{\AO}(C_i)$	&	10	&	0	&	-2	&	0	&	0	&	-10	&	0	&	2	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{align*}
+			a_g &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{A_g}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times 1 + 1 \times 0 \times 1 \\
+		 	&\hspace{14em}+ 1 \times 0 \times 1 + 1 \times (-10) \times 1 + 1 \times 0 \times 1 + 1 \times 2 \times 1 ] = 0,	\\
+		 	b_{1g} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{1g}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times (-1) + 1 \times 0 \times (-1) \\
+		 	&\hspace{14em}+ 1 \times 0 \times 1 + 1 \times (-10) \times 1 + 1 \times 0 \times (-1) + 1 \times 2 \times (-1) ] = 0,	\\
+		 	b_{2g} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{2g}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times 1 + 1 \times 0 \times (-1) \\
+		 	&\hspace{14em}+ 1 \times 0 \times 1 + 1 \times (-10) \times (-1) + 1 \times 0 \times 1 + 1 \times 2 \times (-1) ] = 2,	\\
+		 	b_{3g} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{3g}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times (-1) + 1 \times 0 \times 1 \\
+		 	&\hspace{14em}+ 1 \times 0 \times 1 + 1 \times (-10) \times (-1) + 1 \times 0 \times (-1) + 1 \times 2 \times 1 ] = 3,	\\
+		 	a_u &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{A_u}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times 1 + 1 \times 0 \times 1 \\
+		 	&\hspace{14em}+ 1 \times 0 \times (-1) + 1 \times (-10) \times (-1) + 1 \times 0 \times (-1) + 1 \times 2 \times (-1) ] = 2,	\\
+		 	b_{1u} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{1u}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times (-1) + 1 \times 0 \times (-1) \\
+		 	&\hspace{14em}+ 1 \times 0 \times (-1) + 1 \times (-10) \times (-1) + 1 \times 0 \times 1 + 1 \times 2 \times 1 ] = 3,	\\
+		 	b_{2u} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{2u}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times 1 + 1 \times 0 \times (-1) \\
+		 	&\hspace{14em}+ 1 \times 0 \times (-1) + 1 \times (-10) \times 1 + 1 \times 0 \times (-1) + 1 \times 2 \times 1 ] = 0,	\\
+		 	b_{3u} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{3u}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times (-1) + 1 \times 0 \times 1 \\
+		 	&\hspace{14em}+ 1 \times 0 \times (-1) + 1 \times (-10) \times 1 + 1 \times 0 \times 1 + 1 \times 2 \times (-1) ] = 0.
+		\end{align*}
+		
+		\begin{equation*}
+			\Gamma^{\AO} = 2\Gamma^{B_{2g}} \oplus 3\Gamma^{B_{3g}} \oplus 2\Gamma^{A_u} \oplus 3\Gamma^{B_{1u}}.
+		\end{equation*}
+		
+		\begin{center}
+		\begin{tabular}{ccccccccc}\hline
+	$\mathscr{D}_{\rm 5}$ & $E$ & $C_{2z}$ & $C_{2y}$ & $C_{2x}$	&	$i$	&	$\sigma_{xy}$ &	$\sigma_{xz}$	&	$\sigma_{yz}$\\ \hline
+			$\phi_1$	&	$\phi_1$	&	$\phi_6$	&	$-\phi_9$	&	$-\phi_4$	&	$-\phi_6$	&	$-\phi_1$	&	$\phi_4$	&	$\phi_9$		\\
+			$\phi_2$	&	$\phi_2$	&	$\phi_7$	&	$-\phi_8$	&	$-\phi_3$	&	$-\phi_7$	&	$-\phi_2$	&	$\phi_3$	&	$\phi_8$		\\ 
+			$\phi_5$	&	$\phi_5$	&	$\phi_{10}$	&	$-\phi_5$	&	$-\phi_{10}$	&	$-\phi_{10}$	&	$-\phi_5$	&	$\phi_{10}$	&	$\phi_5$		\\\hline
+		\end{tabular}
+		\end{center}
+		
+		
+		
+		\item 66666666666666666
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{D}_{\rm 5}$ & $E$ & $C_2$ &	$\sigma_{xz}$	& $\sigma_{yz}$\\ \hline
+			$A_1$	&	1	&	1	&	1	&	1	\\
+			$A_2$	&	1	&	1	&	-1	&	-1	\\
+			$B_1$ 	&	1	&	-1	&	1	&	-1	\\
+			$B_2$ 	&	1	&	-1	&	-1	&	1	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{C}_{\rm 2v}$	& $E$ & $C_2$ &	$\sigma_{xz}$	& $\sigma_{yz}$ \\ \hline
+	$\chi^{\AO}(C_i)$	&	14	&	0	&	0	&	-14	\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{align*}
+		a_1 &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{A_1}(R) = \frac{1}{4} \left[ 1 \times 14 \times 1 + 1 \times 0 \times 1 + 1 \times 0 \times 1 + 1 \times (-14) \times 1 \right] = 0, \\		
+		a_2 &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{A_2}(R) = \frac{1}{4} \left[ 1 \times 14 \times 1 + 1 \times 0 \times 1 + 1 \times 0 \times (-1) + 1 \times (-14) \times (-1) \right] = 7, \\
+		b_1 &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{B_1}(R) = \frac{1}{4} \left[ 1 \times 14 \times 1 + 1 \times 0 \times (-1) + 1 \times 0 \times 1 + 1 \times (-14) \times (-1) \right] = 7, \\
+		b_2 &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{B_2}(R) = \frac{1}{4} \left[ 1 \times 14 \times 1 + 1 \times 0 \times (-1) + 1 \times 0 \times (-1) + 1 \times (-14) \times 1 \right] = 0, \\
+		\end{align*}
+		
+		\begin{equation*}
+			\Gamma^{\AO} = 7\Gamma^{A_2} \oplus 7\Gamma^{B_1}.
+		\end{equation*}
+		
+		\begin{center}
+		\begin{tabular}{ccccc}\hline
+	$\mathscr{C}_{\rm 2v}$ & $E$ & $C_2$ &	$\sigma_{xz}$	& $\sigma_{yz}$	\\ \hline
+			$\phi_1$	&	$\phi_1$	&	$-\phi_{10}$	&	$\phi_{10}$	&	$-\phi_1$	\\
+			$\phi_2$	&	$\phi_2$	&	$-\phi_9$	&	$\phi_9$	&	$-\phi_2$		\\
+			$\phi_3$	&	$\phi_3$	&	$-\phi_8$	&	$\phi_8$	&	$-\phi_3$		\\
+			$\phi_4$	&	$\phi_4$	&	$-\phi_7$	&	$\phi_7$	&	$-\phi_4$		\\ 
+			$\phi_5$	&	$\phi_5$	&	$-\phi_6$	&	$\phi_6$	&	$-\phi_5$		\\ 
+			$\phi_{11}$	&	$\phi_{11}$	&	$-\phi_{14}$	&	$\phi_{14}$	&	$-\phi_{11}$		\\
+			$\phi_{12}$	&	$\phi_{12}$	&	$-\phi_{13}$	&	$\phi_{13}$	&	$-\phi_{12}$		\\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\end{enumerate}				
+		
+	\end{solution}
+
+\end{document}
