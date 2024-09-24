@@ -1,6 +1,7 @@
 \documentclass[a4paper]{book}
 
 \usepackage{bm}
+\usepackage{caption}
 \usepackage{enumitem}	% 定制enumerate标号
 \usepackage{geometry}
 \geometry{%
@@ -59,6 +60,9 @@
 \newcommand{\orbd}{\orb{d}}
 \newcommand{\orbf}{\orb{f}}
 
+\newcommand\Figref[1]{Fig \ref{#1}}
+\newcommand\Tableref[1]{Table \ref{#1}}
+
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.1}
 
@@ -84,6 +88,34 @@
 	$\sin^2\theta\cos\phi\cos2\phi$ & $\orbf_{z(x^2-y^2)}$ & $f_6$ \\
 	$\sin^2\theta\cos\phi\sin2\phi$ & $\orbf_{xyz}$ & $f_7$ \\\hline
 		\end{tabular}
+		\end{center}
+		
+		\begin{center}
+		\begin{tabular}{cccc}
+			\begin{minipage}[t]{0.22\linewidth}
+			\centering
+			\setlength{\abovecaptionskip}{0.5em}
+			\includegraphics[scale=1]{./structures/exercise_1/f-orbitals_C3.png}
+			\captionof*{figure}{class $\{C_3\}$}
+			\end{minipage} & 
+			\begin{minipage}[t]{0.22\linewidth}
+			\setlength{\abovecaptionskip}{0.5em}
+			\includegraphics[scale=1]{./structures/exercise_1/f-orbitals_C2.png}
+			\captionof*{figure}{class $\{C_2\}$}
+			\end{minipage} &
+			\begin{minipage}[t]{0.22\linewidth}
+			\centering
+			\setlength{\abovecaptionskip}{0.5em}
+			\includegraphics[scale=1]{./structures/exercise_1/f-orbitals_S4.png}
+			\captionof*{figure}{class $\{S_4\}$}
+			\end{minipage} & 
+			\begin{minipage}[t]{0.22\linewidth}
+			\setlength{\abovecaptionskip}{0.5em}
+			\includegraphics[scale=1]{./structures/exercise_1/f-orbitals_sigma.png}
+			\captionof*{figure}{class $\{\sigma_{\rm d}\}$}
+			\end{minipage}
+		\end{tabular}				
+		\captionof{figure}{aaaaaaa}
 		\end{center}
 		
 		Then, the definition of all operation $R$ is demonstrated below, and they are classified according to their classes. Note that $R(x^\prime,y^\prime,z^\prime)$ means that $x$, $y$, $z$ are converted to $x^\prime$, $y^\prime$, $z^\prime$, respectively.
@@ -252,8 +284,19 @@
 	\end{exercise}
 
 	\begin{solution}
-		2222
 		
+		The structure of a general molecule $\ce{AB6}$ of octahedral symmetry is shown in \Figref{fig:octahedral}.
+		
+		
+		\begin{minipage}[t]{1.0\linewidth}
+		\begin{center}
+		\setlength{\abovecaptionskip}{0.5em}
+		\includegraphics[scale=1.5]{./structures/exercise_2/octahedral.png}
+		\captionof{figure}{A set of vectors $v_1$, $v_2$, $v_3$, $v_4$, $v_5$, and $v_6$ representing the six $\sigma$-hybrid orbitals used by the atom $\ce{A}$ to bond the six $\ce{B}$ atoms in $\ce{AB6}$.}\label{fig:octahedral}
+		\end{center}
+		\end{minipage}		
+		
+		The character table of the point group $\mathscr{O}_{\rm h}$ is shown below.		
 		\begin{center}
 		\begin{tabular}{ccccccccccccc}\hline
 	$\mathscr{O}_{\rm h}$ & $E$ & $8C_3$ &	$3C_2$	& $6C_4$	&	$6C^\prime_2$	&	$i$	&	$8S_6$	&	$3\sigma_{h}$	&	$6S_4$ &	$6\sigma_{d}$	&	&\\ \hline
@@ -270,6 +313,27 @@
 		\end{tabular}
 		\end{center}
 		
+		The character for $\Gamma^{\rm hyb}$ for the $\mathscr{O}_{\rm h}$ point group is 
+		\begin{center}
+		\begin{tabular}{ccccccccccc}\hline
+	$\mathscr{O}_{\rm h}$ & $E$ & $8C_3$ &	$3C_2$	& $6C_4$	&	$6C^\prime_2$	&	$i$	&	$8S_6$	&	$3\sigma_{h}$	&	$6S_4$ &	$6\sigma_{d}$	\\ \hline
+	$\chi^{\rm hyb}(C_i)$ & 6 & 0 & 2 & 2 & 0 &	0 & 0 & 4 & 0 & 2 \\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{equation*}
+			\Gamma^{\rm hyb} = \Gamma^{A_{1g}} \oplus \Gamma^{E_g} \oplus \Gamma^{T_{1u}}.
+		\end{equation*}
+		
+		\begin{center}
+		\begin{tabular}{ccc} \hline
+		$\Gamma^{A_{1g}}$	&	$\Gamma^{E_g}$	&	$\Gamma^{T_{1u}}$\\	\hline
+		$\orbs$	&	($\orbd_{z^2}$, $\orbd_{x^2-y^2}$) & ($\orbp_x$, $\orbp_y$, $\orbp_z$) \\ \hline
+		\end{tabular}
+		\end{center}
+		
+		In conclusion, we have proved that for a molecule of octahedral symmetry the $\sigma$-bonding hybrid orbitals on the central atom are composed of six atomic orbitals, $\orbs$, $\orbp_x$, $\orbp_y$, $\orbp_z$, $\orbd_{z^2}$, and $\orbd_{x^2-y^2}$.
+		
 	\end{solution}
 	
 	\begin{exercise}
@@ -277,7 +341,8 @@
 	\end{exercise}
 	
 	\begin{solution}
-		33333
+		
+		The character table of the point group $\mathscr{D}_{\rm 4h}$ is shown below.
 		\begin{center}
 		\begin{tabular}{ccccccccccccc}\hline
 	$\mathscr{D}_{\rm 4h}$ & $E$ & $2C_4$ &	$C_2$	& $2C^\prime_2$	&	$2C^{\prime\prime}_2$	&	$i$	&	$2S_4$	&	$\sigma_{h}$	&	$2\sigma_{v}$ &	$2\sigma_{d}$	&		&\\ \hline
@@ -293,6 +358,46 @@
 			$E_u$ 		&	2	&	0	&	-2	&	0	&	0	&	-2	&	0	&	2	&	0	&	0	& ($x$, $y$)	&\\ \hline
 		\end{tabular}
 		\end{center}
+		
+		\begin{minipage}[t]{1.0\linewidth}
+		\begin{center}
+		\setlength{\abovecaptionskip}{0.5em}
+		\includegraphics[scale=1.5]{./structures/exercise_3/square_planar.png}
+		\captionof{figure}{rehstrjstfjs}
+		\end{center}
+		\end{minipage}	
+		
+		\begin{center}
+		\begin{tabular}{ccccccccccccc}\hline
+	$\mathscr{D}_{\rm 4h}$ & $E$ & $2C_4$ &	$C_2$	& $2C^\prime_2$	&	$2C^{\prime\prime}_2$	&	$i$	&	$2S_4$	&	$\sigma_{h}$	&	$2\sigma_{v}$ &	$2\sigma_{d}$	&		&\\ \hline
+	$\chi^{\rm hyb}(C_i)$ & 8 & 0 & 0 & -4 & 0 & 0 & 0 & 0 & 0 & 0 \\
+	$\chi^{\rm hyb}_{\rm perp}(C_i)$ & 4 & 0 & 0 & -2 & 0 & 0 & 0 & -4 & 2 & 0 \\ 
+	$\chi^{\rm hyb}_{\rm plane}(C_i)$ & 4 & 0 & 0 & -2 & 0 & 0 & 0 & 4 & -2 & 0 \\ \hline
+		\end{tabular}
+		\end{center}
+		
+		\begin{align*}
+			\Gamma^{\rm hyb}_{\rm perp} &= \Gamma^{A_{2u}} \oplus \Gamma^{B_{2u}} \oplus \Gamma^{E_g}, \\
+			\Gamma^{\rm hyb}_{\rm plane} &= \Gamma^{A_{2g}} \oplus \Gamma^{B_{2g}} \oplus \Gamma^{E_u}.
+		\end{align*}
+		
+		\begin{center}
+		\begin{tabular}{ccc|ccc} \hline
+		\multicolumn{3}{c|}{$\Gamma^{\rm hyb}_{\rm perp}$} & \multicolumn{3}{c}{$\Gamma^{\rm hyb}_{\rm plane}$} \\
+		$\Gamma^{A_{2u}}$	&	$\Gamma^{B_{2u}}$	&	$\Gamma^{E_g}$	&	$\Gamma^{A_{2g}}$	&	$\Gamma^{B_{2g}}$	&	$\Gamma^{E_u}$	\\	\hline
+		$\orbp_z$	&	none & ($\orbd_{xz}$, $\orbd_{yz}$)	&	none & $\orbd_{xy}$	&	($\orbp_x$, $\orbp_y$) \\ \hline
+		\end{tabular}
+		\end{center}
+		
+		Thus, we conclude two conclusions.
+		\begin{itemize}
+			
+		\item There will be only 3 $\pi$-bonds which are formed by $\orbp_z$, $\orbd_{xz}$, and $\orbd_{yz}$, perpendicular to the molecular plane and they are shared equally amongst the 4 $\ce{B}$ atoms.
+		
+		\item There will be also only 3 $\pi$-bonds which are formed by $\orbd_{xy}$, $\orbp_x$, and $\orbp_y$, in the molecular plane and they are shared equally amongst the 4 $\ce{B}$ atoms.
+		
+		\end{itemize}
+		
 	\end{solution}
 	
 	\begin{exercise}
@@ -300,7 +405,16 @@
 	\end{exercise}
 	
 	\begin{solution}
-		44444
+		
+		
+				\begin{minipage}[t]{1.0\linewidth}
+		\begin{center}
+		\setlength{\abovecaptionskip}{0.5em}
+		\includegraphics[scale=1.5]{./structures/exercise_4/square_planar.png}
+		\captionof{figure}{fdsgfgsgh}
+		\end{center}
+		\end{minipage}	
+		
 	\end{solution}
 
 \end{document}
