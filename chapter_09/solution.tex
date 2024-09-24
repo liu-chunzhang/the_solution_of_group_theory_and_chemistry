@@ -1,5 +1,7 @@
 \documentclass[a4paper]{book}
 
+\usepackage{caption}
+\usepackage{enumitem}	% 定制enumerate标号
 \usepackage{geometry}
 \geometry{%
 	left=2cm,%
@@ -7,7 +9,6 @@
 	top=2cm,%
 	bottom=2cm,%
 	bindingoffset=0cm}
-\usepackage{enumitem}	% 定制enumerate标号
 \usepackage[none]{hyphenat}	% 阻止长单词分在两行
 \usepackage{mathrsfs}	% 提供\mathscr字体
 \usepackage[version=4]{mhchem}
@@ -298,7 +299,33 @@
 		\end{tabular}
 		\end{center}
 		
-		
+		\begin{center}
+		\begin{tabular}{cccc}
+			\begin{minipage}[t]{0.22\linewidth}
+			\centering
+			\setlength{\abovecaptionskip}{0.5em}
+			\includegraphics[scale=1]{./structures/exercise_1/trans-1,3-butadiene/trans-1,3-butadiene-4.png}
+			\captionof*{figure}{$\Delta E = \alpha + 1.618\beta$}
+			\end{minipage} & 
+			\begin{minipage}[t]{0.22\linewidth}
+			\setlength{\abovecaptionskip}{0.5em}
+			\includegraphics[scale=1]{./structures/exercise_1/trans-1,3-butadiene/trans-1,3-butadiene-2.png}
+			\captionof*{figure}{$\Delta E = \alpha + 0.618\beta$}
+			\end{minipage} &
+			\begin{minipage}[t]{0.22\linewidth}
+			\centering
+			\setlength{\abovecaptionskip}{0.5em}
+			\includegraphics[scale=1]{./structures/exercise_1/trans-1,3-butadiene/trans-1,3-butadiene-3.png}
+			\captionof*{figure}{$\Delta E = \alpha - 0.618\beta$}
+			\end{minipage} & 
+			\begin{minipage}[t]{0.22\linewidth}
+			\setlength{\abovecaptionskip}{0.5em}
+			\includegraphics[scale=1]{./structures/exercise_1/trans-1,3-butadiene/trans-1,3-butadiene-1.png}
+			\captionof*{figure}{$\Delta E = \alpha - 1.618\beta$}
+			\end{minipage}
+		\end{tabular}				
+		\captionof{figure}{aaaaaaa}
+		\end{center}
 		
 		
 		\item 22222222222222222
