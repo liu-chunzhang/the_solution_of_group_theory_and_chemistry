@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- IBoard SVG File -->
+
+<svg
+   viewBox="544.26 253.49 70.63 95.46"
+   height="88.46"
+   width="77.63"
+   version="1.1"
+   id="svg21"
+   sodipodi:docname="5.svg"
+   inkscape:export-filename="5.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview21"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="7.1896903"
+     inkscape:cx="38.805566"
+     inkscape:cy="44.23"
+     inkscape:window-width="1466"
+     inkscape:window-height="896"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg21" />
+  <!-- SVG File -->
+  <polygon
+     points="553.510742,290.979370 578.070984,273.170258 578.070313,273.899048 578.069641,274.627838 554.896606,291.431091 554.203674,291.205231 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon1" />
+  <polygon
+     points="578.070984,273.170258 602.597107,291.024445 601.903748,291.248993 601.210388,291.473541 578.069641,274.627838 578.070313,273.899048 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon2" />
+  <polygon
+     points="602.597107,291.024445 593.196594,319.867828 592.768738,319.277832 592.340881,318.687836 601.210388,291.473541 601.903748,291.248993 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon3" />
+  <polygon
+     points="598.304382,292.779144 590.762268,315.920593 590.201660,315.737885 589.641052,315.555176 597.183167,292.413727 597.743774,292.596436 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon4" />
+  <polygon
+     points="593.196594,319.867828 562.859375,319.840607 563.288269,319.251404 563.717163,318.662201 592.340881,318.687836 592.768738,319.277832 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon5" />
+  <polygon
+     points="562.859375,319.840607 553.510742,290.979370 554.203674,291.205231 554.896606,291.431091 563.717163,318.662201 563.288269,319.251404 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon6" />
+  <polygon
+     points="565.300781,315.897797 557.800293,292.742035 558.361206,292.560333 558.922119,292.378632 566.422607,315.534393 565.861694,315.716095 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon7" />
+  <path
+     d="M578.070313 259.158905 C 574.070313 259.158905,571.070313 266.158905,578.070313 273.899048 M578.070313 259.158905 C 582.070313 259.158905,585.070313 266.158905,578.070313 273.899048"
+     fill="url(#gradient1)"
+     id="path7" />
+  <path
+     d="M578.070313 287.899048 C 582.070313 287.899048,585.070313 280.899048,578.070313 273.899048 M578.070313 287.899048 C 574.070313 287.899048,571.070313 280.899048,578.070313 273.899048"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path8" />
+  <path
+     d="M601.699280 305.987732 C 605.698914 306.043213,608.795715 299.085510,601.903748 291.248993 M601.699280 305.987732 C 597.699646 305.932251,594.797058 298.891296,601.903748 291.248993"
+     fill="url(#gradient2)"
+     id="path9" />
+  <path
+     d="M602.097961 277.250336 C 598.098328 277.194855,595.001526 284.152557,601.903748 291.248993 M602.097961 277.250336 C 606.097595 277.305817,609.000183 284.346771,601.903748 291.248993"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path10" />
+  <path
+     d="M592.938049 304.538300 C 588.938293 304.492340,585.858093 311.457428,592.768738 319.277832 M592.938049 304.538300 C 596.937805 304.584259,599.857178 311.618256,592.768738 319.277832"
+     fill="url(#gradient3)"
+     id="path11" />
+  <path
+     d="M592.607910 333.276917 C 596.607666 333.322876,599.687866 326.357788,592.768738 319.277832 M592.607910 333.276917 C 588.608154 333.230957,585.688782 326.196991,592.768738 319.277832"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path12" />
+  <path
+     d="M554.081970 305.944885 C 558.081848 305.977905,561.139526 299.002899,554.203674 291.205231 M554.081970 305.944885 C 550.082092 305.911865,547.140015 298.887329,554.203674 291.205231"
+     fill="url(#gradient4)"
+     id="path13" />
+  <path
+     d="M554.319275 277.205719 C 550.319397 277.172699,547.261719 284.147675,554.203674 291.205231 M554.319275 277.205719 C 558.319153 277.238739,561.261230 284.263275,554.203674 291.205231"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path14" />
+  <defs
+     id="defs21">
+    <radialGradient
+       id="gradient1"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop14" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop15" />
+    </radialGradient>
+    <radialGradient
+       id="gradient2"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop16" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop17" />
+    </radialGradient>
+    <radialGradient
+       id="gradient3"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop18" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop19" />
+    </radialGradient>
+    <radialGradient
+       id="gradient4"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop20" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop21" />
+    </radialGradient>
+  </defs>
+</svg>

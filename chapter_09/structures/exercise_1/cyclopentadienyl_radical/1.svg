@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- IBoard SVG File -->
+
+<svg
+   viewBox="544.34 253.49 70.44 95.46"
+   height="88.46"
+   width="77.44"
+   version="1.1"
+   id="svg25"
+   sodipodi:docname="1.svg"
+   inkscape:export-filename="1.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview25"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="7.1896903"
+     inkscape:cx="38.666478"
+     inkscape:cy="44.23"
+     inkscape:window-width="1466"
+     inkscape:window-height="896"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg25" />
+  <!-- SVG File -->
+  <polygon
+     points="553.510681,290.979492 578.070984,273.170227 578.070313,273.899048 578.069580,274.627808 554.896423,291.431091 554.203674,291.205231 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon1" />
+  <polygon
+     points="578.070984,273.170227 602.597290,291.024597 601.903748,291.248993 601.210571,291.473541 578.069580,274.627808 578.070313,273.899048 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon2" />
+  <polygon
+     points="602.597290,291.024597 593.196655,319.867981 592.768738,319.277832 592.340820,318.688080 601.210571,291.473541 601.903748,291.248993 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon3" />
+  <polygon
+     points="598.304504,292.779205 590.762268,315.920593 590.201660,315.737793 589.641113,315.555176 597.183289,292.413727 597.743896,292.596405 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon4" />
+  <polygon
+     points="593.196472,319.867920 562.859436,319.840546 563.288269,319.251404 563.717102,318.661896 592.340759,318.688049 592.768738,319.277832 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon5" />
+  <polygon
+     points="562.859192,319.840546 553.510681,290.979492 554.203674,291.205231 554.896423,291.431091 563.717041,318.661896 563.288269,319.251404 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon6" />
+  <polygon
+     points="565.300781,315.897797 557.800232,292.742065 558.361206,292.560364 558.922119,292.378693 566.422302,315.534210 565.861389,315.715942 "
+     style="fill:rgb(0,0,0);fill-opacity:1.000000"
+     id="polygon7" />
+  <path
+     d="M578.070313 259.158905 C 574.070313 259.158905,571.070313 266.158905,578.070313 273.899048 M578.070313 259.158905 C 582.070313 259.158905,585.070313 266.158905,578.070313 273.899048"
+     fill="url(#gradient1)"
+     id="path7" />
+  <path
+     d="M578.070313 287.899048 C 582.070313 287.899048,585.070313 280.899048,578.070313 273.899048 M578.070313 287.899048 C 574.070313 287.899048,571.070313 280.899048,578.070313 273.899048"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path8" />
+  <path
+     d="M601.903748 276.508850 C 597.903748 276.508850,594.903748 283.508850,601.903748 291.248993 M601.903748 276.508850 C 605.903748 276.508850,608.903748 283.508850,601.903748 291.248993"
+     fill="url(#gradient2)"
+     id="path9" />
+  <path
+     d="M601.903748 305.248993 C 605.903748 305.248993,608.903748 298.248993,601.903748 291.248993 M601.903748 305.248993 C 597.903748 305.248993,594.903748 298.248993,601.903748 291.248993"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path10" />
+  <path
+     d="M592.768738 304.537689 C 588.768738 304.537689,585.768738 311.537689,592.768738 319.277832 M592.768738 304.537689 C 596.768738 304.537689,599.768738 311.537689,592.768738 319.277832"
+     fill="url(#gradient3)"
+     id="path11" />
+  <path
+     d="M592.768738 333.277832 C 596.768738 333.277832,599.768738 326.277832,592.768738 319.277832 M592.768738 333.277832 C 588.768738 333.277832,585.768738 326.277832,592.768738 319.277832"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path12" />
+  <path
+     d="M563.288269 304.511261 C 559.288269 304.511261,556.288269 311.511261,563.288269 319.251404 M563.288269 304.511261 C 567.288269 304.511261,570.288269 311.511261,563.288269 319.251404"
+     fill="url(#gradient4)"
+     id="path13" />
+  <path
+     d="M563.288269 333.251404 C 567.288269 333.251404,570.288269 326.251404,563.288269 319.251404 M563.288269 333.251404 C 559.288269 333.251404,556.288269 326.251404,563.288269 319.251404"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path14" />
+  <path
+     d="M554.203674 276.465088 C 550.203674 276.465088,547.203674 283.465088,554.203674 291.205231 M554.203674 276.465088 C 558.203674 276.465088,561.203674 283.465088,554.203674 291.205231"
+     fill="url(#gradient5)"
+     id="path15" />
+  <path
+     d="M554.203674 305.205231 C 558.203674 305.205231,561.203674 298.205231,554.203674 291.205231 M554.203674 305.205231 C 550.203674 305.205231,547.203674 298.205231,554.203674 291.205231"
+     style="fill:rgb(255,255,255);fill-opacity:1.000000;stroke-width:1.179213;stroke:rgb(0,0,0);"
+     stroke-linecap="round"
+     id="path16" />
+  <defs
+     id="defs25">
+    <radialGradient
+       id="gradient1"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop16" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop17" />
+    </radialGradient>
+    <radialGradient
+       id="gradient2"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop18" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop19" />
+    </radialGradient>
+    <radialGradient
+       id="gradient3"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop20" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop21" />
+    </radialGradient>
+    <radialGradient
+       id="gradient4"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop22" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop23" />
+    </radialGradient>
+    <radialGradient
+       id="gradient5"
+       cx="50.000000%"
+       cy="50.000000%"
+       r="50.000000%"
+       fx="50.000000%"
+       fy="50.000000%">
+      <stop
+         style="stop-color:rgb(255,255,255);stop-opacity:1.000000"
+         offset="0%"
+         id="stop24" />
+      <stop
+         style="stop-color:rgb(0,0,0);stop-opacity:1.000000"
+         offset="100%"
+         id="stop25" />
+    </radialGradient>
+  </defs>
+</svg>
