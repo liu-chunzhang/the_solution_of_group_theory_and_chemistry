@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  29 SEP 2024 08:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  29 SEP 2024 17:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -357,6 +357,13 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \mhchem@option@minustextsidebearingleft=\dimen175
 \mhchem@option@minustextsidebearingright=\dimen176
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip68
+\multirow@cntb=\count302
+\multirow@dima=\skip69
+\bigstrutjot=\dimen177
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
 
@@ -365,8 +372,8 @@ Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen177
-\pgfutil@tempdimb=\dimen178
+\pgfutil@tempdima=\dimen178
+\pgfutil@tempdimb=\dimen179
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box55
@@ -379,8 +386,8 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen179
-\Gin@req@width=\dimen180
+\Gin@req@height=\dimen180
+\Gin@req@width=\dimen181
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
@@ -393,26 +400,26 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 tered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen181
-\pgf@y=\dimen182
-\pgf@xa=\dimen183
-\pgf@ya=\dimen184
-\pgf@xb=\dimen185
-\pgf@yb=\dimen186
-\pgf@xc=\dimen187
-\pgf@yc=\dimen188
-\pgf@xd=\dimen189
-\pgf@yd=\dimen190
+\pgf@x=\dimen182
+\pgf@y=\dimen183
+\pgf@xa=\dimen184
+\pgf@ya=\dimen185
+\pgf@xb=\dimen186
+\pgf@yb=\dimen187
+\pgf@xc=\dimen188
+\pgf@yc=\dimen189
+\pgf@xd=\dimen190
+\pgf@yd=\dimen191
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count302
-\c@pgf@countb=\count303
-\c@pgf@countc=\count304
-\c@pgf@countd=\count305
+\c@pgf@counta=\count303
+\c@pgf@countb=\count304
+\c@pgf@countc=\count305
+\c@pgf@countd=\count306
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count306
+\pgf@sys@id@count=\count307
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
@@ -430,8 +437,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count307
-\pgfsyssoftpath@bigbuffer@items=\count308
+\pgfsyssoftpath@smallbuffer@items=\count308
+\pgfsyssoftpath@bigbuffer@items=\count309
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -460,8 +467,8 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen191
-\pgfmath@count=\count309
+\pgfmath@dimen=\dimen192
+\pgfmath@count=\count310
 \pgfmath@box=\box56
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
@@ -487,37 +494,37 @@ code.tex)
 erarithmetics.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count310
+\c@pgfmathroundto@lastzeros=\count311
 )) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen192
-\pgf@picmaxx=\dimen193
-\pgf@picminy=\dimen194
-\pgf@picmaxy=\dimen195
-\pgf@pathminx=\dimen196
-\pgf@pathmaxx=\dimen197
-\pgf@pathminy=\dimen198
-\pgf@pathmaxy=\dimen199
-\pgf@xx=\dimen256
-\pgf@xy=\dimen257
-\pgf@yx=\dimen258
-\pgf@yy=\dimen259
-\pgf@zx=\dimen260
-\pgf@zy=\dimen261
+\pgf@picminx=\dimen193
+\pgf@picmaxx=\dimen194
+\pgf@picminy=\dimen195
+\pgf@picmaxy=\dimen196
+\pgf@pathminx=\dimen197
+\pgf@pathmaxx=\dimen198
+\pgf@pathminy=\dimen199
+\pgf@pathmaxy=\dimen256
+\pgf@xx=\dimen257
+\pgf@xy=\dimen258
+\pgf@yx=\dimen259
+\pgf@yy=\dimen260
+\pgf@zx=\dimen261
+\pgf@zy=\dimen262
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen262
-\pgf@path@lasty=\dimen263
+\pgf@path@lastx=\dimen263
+\pgf@path@lasty=\dimen264
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen264
-\pgf@shorten@start@additional=\dimen265
+\pgf@shorten@end@additional=\dimen265
+\pgf@shorten@start@additional=\dimen266
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
@@ -525,19 +532,19 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count311
+\pgf@picture@serial@count=\count312
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen266
+\pgflinewidth=\dimen267
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen267
-\pgf@pt@y=\dimen268
-\pgf@pt@temp=\dimen269
+\pgf@pt@x=\dimen268
+\pgf@pt@y=\dimen269
+\pgf@pt@temp=\dimen270
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -554,14 +561,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen270
+\pgfarrowsep=\dimen271
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen271
-\pgf@sys@shading@range@num=\count312
-\pgf@shadingcount=\count313
+\pgf@max=\dimen272
+\pgf@sys@shading@range@num=\count313
+\pgf@shadingcount=\count314
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -600,8 +607,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen272
-\pgf@nodesepend=\dimen273
+\pgf@nodesepstart=\dimen273
+\pgf@nodesepend=\dimen274
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -622,11 +629,11 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box63
 \tcb@lowerbox=\box64
 \tcb@phantombox=\box65
-\c@tcbbreakpart=\count314
-\c@tcblayer=\count315
-\c@tcolorbox@number=\count316
+\c@tcbbreakpart=\count315
+\c@tcblayer=\count316
+\c@tcolorbox@number=\count317
 \l__tcobox_tmpa_box=\box66
-\l__tcobox_tmpa_dim=\dimen274
+\l__tcobox_tmpa_dim=\dimen275
 \tcb@temp=\box67
 \tcb@temp=\box68
 \tcb@temp=\box69
@@ -634,10 +641,10 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
-\c@tcbrastercolumn=\count317
-\c@tcbrasterrow=\count318
-\c@tcbrasternum=\count319
-\c@tcbraster=\count320
+\c@tcbrastercolumn=\count318
+\c@tcbrasterrow=\count319
+\c@tcbrasternum=\count320
+\c@tcbraster=\count321
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
@@ -648,8 +655,8 @@ Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen275
-\pgffor@skip=\dimen276
+\pgffor@iter=\dimen276
+\pgffor@skip=\dimen277
 \pgffor@stack=\toks37
 \pgffor@toks=\toks38
 ))
@@ -660,34 +667,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count321
-\pgfplotmarksize=\dimen277
+\pgf@plot@mark@count=\count322
+\pgfplotmarksize=\dimen278
 )
-\tikz@lastx=\dimen278
-\tikz@lasty=\dimen279
-\tikz@lastxsaved=\dimen280
-\tikz@lastysaved=\dimen281
-\tikz@lastmovetox=\dimen282
-\tikz@lastmovetoy=\dimen283
-\tikzleveldistance=\dimen284
-\tikzsiblingdistance=\dimen285
+\tikz@lastx=\dimen279
+\tikz@lasty=\dimen280
+\tikz@lastxsaved=\dimen281
+\tikz@lastysaved=\dimen282
+\tikz@lastmovetox=\dimen283
+\tikz@lastmovetoy=\dimen284
+\tikzleveldistance=\dimen285
+\tikzsiblingdistance=\dimen286
 \tikz@figbox=\box71
 \tikz@figbox@bg=\box72
 \tikz@tempbox=\box73
 \tikz@tempbox@bg=\box74
-\tikztreelevel=\count322
-\tikznumberofchildren=\count323
-\tikznumberofcurrentchild=\count324
-\tikz@fig@count=\count325
+\tikztreelevel=\count323
+\tikznumberofchildren=\count324
+\tikznumberofcurrentchild=\count325
+\tikz@fig@count=\count326
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count326
-\pgfmatrixcurrentcolumn=\count327
-\pgf@matrix@numberofcolumns=\count328
+\pgfmatrixcurrentrow=\count327
+\pgfmatrixcurrentcolumn=\count328
+\pgf@matrix@numberofcolumns=\count329
 )
-\tikz@expandcount=\count329
+\tikz@expandcount=\count330
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -723,34 +730,34 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
-\tcbfitdim=\dimen286
-\tcb@lowerfitdim=\dimen287
-\tcb@upperfitdim=\dimen288
-\tcb@cur@hbadness=\count330
+\tcbfitdim=\dimen287
+\tcb@lowerfitdim=\dimen288
+\tcb@upperfitdim=\dimen289
+\tcb@cur@hbadness=\count331
 ))
-\c@tcb@cnt@exercise=\count331
-\c@tcb@cnt@solution=\count332
+\c@tcb@cnt@exercise=\count332
+\c@tcb@cnt@solution=\count333
  (./solution.aux)
 \openout1 = `solution.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -789,27 +796,27 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 74.
+Package hyperref Info: Link coloring ON on input line 75.
 (./solution.out) (./solution.out)
 \@outlinefile=\write4
 \openout4 = `solution.out'.
 
 
-Package chemgreek Info: Activating mapping `default' on line 74.
+Package chemgreek Info: Activating mapping `default' on line 75.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
-\scratchdimen=\dimen289
+\scratchcounter=\count334
+\scratchdimen=\dimen290
 \scratchbox=\box79
-\nofMPsegments=\count334
-\nofMParguments=\count335
+\nofMPsegments=\count335
+\nofMParguments=\count336
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count336
-\MPscratchDim=\dimen290
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
+\MPscratchCnt=\count337
+\MPscratchDim=\dimen291
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
 \everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -820,7 +827,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 79
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 80
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -832,7 +839,7 @@ File: ./structures/exercise_1/trans-1,3-butadiene/0.png Graphic file (type png)
 
 <use ./structures/exercise_1/trans-1,3-butadiene/0.png>
 Package pdftex.def Info: ./structures/exercise_1/trans-1,3-butadiene/0.png  use
-d on input line 110.
+d on input line 111.
 (pdftex.def)             Requested size: 73.7152pt x 41.43468pt.
 <./structures/exercise_1/trans-1,3-butadiene/4.png, id=10, 80.2197pt x 43.6029p
 t>
@@ -840,7 +847,7 @@ File: ./structures/exercise_1/trans-1,3-butadiene/4.png Graphic file (type png)
 
 <use ./structures/exercise_1/trans-1,3-butadiene/4.png>
 Package pdftex.def Info: ./structures/exercise_1/trans-1,3-butadiene/4.png  use
-d on input line 361.
+d on input line 362.
 (pdftex.def)             Requested size: 76.20827pt x 41.4225pt.
 <./structures/exercise_1/trans-1,3-butadiene/2.png, id=11, 80.2197pt x 44.0847p
 t>
@@ -848,7 +855,7 @@ File: ./structures/exercise_1/trans-1,3-butadiene/2.png Graphic file (type png)
 
 <use ./structures/exercise_1/trans-1,3-butadiene/2.png>
 Package pdftex.def Info: ./structures/exercise_1/trans-1,3-butadiene/2.png  use
-d on input line 366.
+d on input line 367.
 (pdftex.def)             Requested size: 76.20827pt x 41.8802pt.
 <./structures/exercise_1/trans-1,3-butadiene/3.png, id=12, 80.2197pt x 44.0847p
 t>
@@ -856,7 +863,7 @@ File: ./structures/exercise_1/trans-1,3-butadiene/3.png Graphic file (type png)
 
 <use ./structures/exercise_1/trans-1,3-butadiene/3.png>
 Package pdftex.def Info: ./structures/exercise_1/trans-1,3-butadiene/3.png  use
-d on input line 372.
+d on input line 373.
 (pdftex.def)             Requested size: 76.20827pt x 41.8802pt.
 <./structures/exercise_1/trans-1,3-butadiene/1.png, id=13, 80.2197pt x 42.8802p
 t>
@@ -864,19 +871,19 @@ File: ./structures/exercise_1/trans-1,3-butadiene/1.png Graphic file (type png)
 
 <use ./structures/exercise_1/trans-1,3-butadiene/1.png>
 Package pdftex.def Info: ./structures/exercise_1/trans-1,3-butadiene/1.png  use
-d on input line 377.
+d on input line 378.
 (pdftex.def)             Requested size: 76.20827pt x 40.73593pt.
 <./structures/exercise_1/ethylene/1.png, id=14, 44.5665pt x 32.5215pt>
 File: ./structures/exercise_1/ethylene/1.png Graphic file (type png)
 <use ./structures/exercise_1/ethylene/1.png>
 Package pdftex.def Info: ./structures/exercise_1/ethylene/1.png  used on input 
-line 475.
+line 476.
 (pdftex.def)             Requested size: 44.56638pt x 32.52141pt.
 <./structures/exercise_1/ethylene/2.png, id=15, 44.5665pt x 33.0033pt>
 File: ./structures/exercise_1/ethylene/2.png Graphic file (type png)
 <use ./structures/exercise_1/ethylene/2.png>
 Package pdftex.def Info: ./structures/exercise_1/ethylene/2.png  used on input 
-line 480.
+line 481.
 (pdftex.def)             Requested size: 44.56638pt x 33.0032pt.
 <./structures/exercise_1/cyclobutadiene_anion/0.png, id=18, 42.3984pt x 46.0119
 pt>
@@ -884,7 +891,7 @@ File: ./structures/exercise_1/cyclobutadiene_anion/0.png Graphic file (type png
 )
 <use ./structures/exercise_1/cyclobutadiene_anion/0.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclobutadiene_anion/0.png  us
-ed on input line 508.
+ed on input line 509.
 (pdftex.def)             Requested size: 42.39828pt x 46.01178pt.
 <./structures/exercise_1/cyclobutadiene_anion/1.png, id=20, 44.5665pt x 54.6843
 pt>
@@ -892,7 +899,7 @@ File: ./structures/exercise_1/cyclobutadiene_anion/1.png Graphic file (type png
 )
 <use ./structures/exercise_1/cyclobutadiene_anion/1.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclobutadiene_anion/1.png  us
-ed on input line 657.
+ed on input line 658.
 (pdftex.def)             Requested size: 44.56638pt x 54.68414pt.
 <./structures/exercise_1/cyclobutadiene_anion/3.png, id=21, 44.5665pt x 55.1661
 pt>
@@ -900,7 +907,7 @@ File: ./structures/exercise_1/cyclobutadiene_anion/3.png Graphic file (type png
 )
 <use ./structures/exercise_1/cyclobutadiene_anion/3.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclobutadiene_anion/3.png  us
-ed on input line 662.
+ed on input line 663.
 (pdftex.def)             Requested size: 44.56638pt x 55.16595pt.
 <./structures/exercise_1/cyclobutadiene_anion/4.png, id=22, 44.5665pt x 55.1661
 pt>
@@ -908,7 +915,7 @@ File: ./structures/exercise_1/cyclobutadiene_anion/4.png Graphic file (type png
 )
 <use ./structures/exercise_1/cyclobutadiene_anion/4.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclobutadiene_anion/4.png  us
-ed on input line 668.
+ed on input line 669.
 (pdftex.def)             Requested size: 44.56638pt x 55.16595pt.
 <./structures/exercise_1/cyclobutadiene_anion/2.png, id=23, 44.5665pt x 55.1661
 pt>
@@ -916,7 +923,7 @@ File: ./structures/exercise_1/cyclobutadiene_anion/2.png Graphic file (type png
 )
 <use ./structures/exercise_1/cyclobutadiene_anion/2.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclobutadiene_anion/2.png  us
-ed on input line 673.
+ed on input line 674.
 (pdftex.def)             Requested size: 44.56638pt x 55.16595pt.
 <./structures/exercise_1/cyclopentadienyl_radical/0.png, id=25, 62.8749pt x 70.
 3428pt>
@@ -924,7 +931,7 @@ File: ./structures/exercise_1/cyclopentadienyl_radical/0.png Graphic file (type
  png)
 <use ./structures/exercise_1/cyclopentadienyl_radical/0.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclopentadienyl_radical/0.png
-  used on input line 698.
+  used on input line 699.
 (pdftex.def)             Requested size: 62.87473pt x 70.34262pt.
 <./structures/exercise_1/cyclopentadienyl_radical/1.png, id=27, 58.2978pt x 66.
 4884pt>
@@ -932,7 +939,7 @@ File: ./structures/exercise_1/cyclopentadienyl_radical/1.png Graphic file (type
  png)
 <use ./structures/exercise_1/cyclopentadienyl_radical/1.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclopentadienyl_radical/1.png
-  used on input line 900.
+  used on input line 899.
 (pdftex.def)             Requested size: 58.29765pt x 66.48824pt.
 <./structures/exercise_1/cyclopentadienyl_radical/2.png, id=28, 58.2978pt x 67.
 2111pt>
@@ -940,7 +947,7 @@ File: ./structures/exercise_1/cyclopentadienyl_radical/2.png Graphic file (type
  png)
 <use ./structures/exercise_1/cyclopentadienyl_radical/2.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclopentadienyl_radical/2.png
-  used on input line 905.
+  used on input line 904.
 (pdftex.def)             Requested size: 58.29765pt x 67.21094pt.
 <./structures/exercise_1/cyclopentadienyl_radical/3.png, id=29, 58.2978pt x 67.
 2111pt>
@@ -948,7 +955,7 @@ File: ./structures/exercise_1/cyclopentadienyl_radical/3.png Graphic file (type
  png)
 <use ./structures/exercise_1/cyclopentadienyl_radical/3.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclopentadienyl_radical/3.png
-  used on input line 911.
+  used on input line 910.
 (pdftex.def)             Requested size: 58.29765pt x 67.21094pt.
 <./structures/exercise_1/cyclopentadienyl_radical/4.png, id=30, 58.2978pt x 67.
 2111pt>
@@ -956,7 +963,7 @@ File: ./structures/exercise_1/cyclopentadienyl_radical/4.png Graphic file (type
  png)
 <use ./structures/exercise_1/cyclopentadienyl_radical/4.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclopentadienyl_radical/4.png
-  used on input line 916.
+  used on input line 915.
 (pdftex.def)             Requested size: 58.29765pt x 67.21094pt.
 <./structures/exercise_1/cyclopentadienyl_radical/5.png, id=31, 58.5387pt x 66.
 4884pt>
@@ -964,14 +971,15 @@ File: ./structures/exercise_1/cyclopentadienyl_radical/5.png Graphic file (type
  png)
 <use ./structures/exercise_1/cyclopentadienyl_radical/5.png>
 Package pdftex.def Info: ./structures/exercise_1/cyclopentadienyl_radical/5.png
-  used on input line 921.
+  used on input line 920.
 (pdftex.def)             Requested size: 58.53854pt x 66.48824pt.
-
-Overfull \hbox (39.43983pt too wide) detected at line 973
-[]
- []
-
-[1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+<./structures/exercise_1/naphthalene/0.png, id=33, 99.9735pt x 70.1019pt>
+File: ./structures/exercise_1/naphthalene/0.png Graphic file (type png)
+<use ./structures/exercise_1/naphthalene/0.png>
+Package pdftex.def Info: ./structures/exercise_1/naphthalene/0.png  used on inp
+ut line 950.
+(pdftex.def)             Requested size: 99.97324pt x 70.10172pt.
+ [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./structures/exercise_1/trans-1,3-butadiene/0.png>] [2] [3] [4] [5 <./structu
 res/exercise_1/trans-1,3-butadiene/4.png> <./structures/exercise_1/trans-1,3-bu
@@ -981,12 +989,13 @@ s/exercise_1/trans-1,3-butadiene/1.png>] [6 <./structures/exercise_1/ethylene/1
 tadiene_anion/0.png>] [7] [8 <./structures/exercise_1/cyclobutadiene_anion/1.pn
 g> <./structures/exercise_1/cyclobutadiene_anion/3.png> <./structures/exercise_
 1/cyclobutadiene_anion/4.png> <./structures/exercise_1/cyclobutadiene_anion/2.p
-ng>]
-[9 <./structures/exercise_1/cyclopentadienyl_radical/0.png>] [10] [11] [12 <./s
-tructures/exercise_1/cyclopentadienyl_radical/1.png> <./structures/exercise_1/c
-yclopentadienyl_radical/2.png> <./structures/exercise_1/cyclopentadienyl_radica
-l/3.png> <./structures/exercise_1/cyclopentadienyl_radical/4.png> <./structures
-/exercise_1/cyclopentadienyl_radical/5.png>] [13] [14] (./solution.aux)
+ng>] [9 <./structures/exercise_1/cyclopentadienyl_radical/0.png>] [10] [11] [12
+ <./structures/exercise_1/cyclopentadienyl_radical/1.png> <./structures/exercis
+e_1/cyclopentadienyl_radical/2.png> <./structures/exercise_1/cyclopentadienyl_r
+adical/3.png> <./structures/exercise_1/cyclopentadienyl_radical/4.png> <./struc
+tures/exercise_1/cyclopentadienyl_radical/5.png>] [13 <./structures/exercise_1/
+naphthalene/0.png>]
+[14] [15] [16] (./solution.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -995,10 +1004,10 @@ Package rerunfilecheck Info: File `solution.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27294 strings out of 474116
- 560791 string characters out of 5743688
- 2122187 words of memory out of 5000000
- 49191 multiletter control sequences out of 15000+600000
+ 27387 strings out of 474116
+ 562588 string characters out of 5743688
+ 2152187 words of memory out of 5000000
+ 49261 multiletter control sequences out of 15000+600000
  560786 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,94p,670b,1226s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1016,10 +1025,10 @@ xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
 ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on solution.pdf (14 pages, 391325 bytes).
+Output written on solution.pdf (16 pages, 411879 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 72 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

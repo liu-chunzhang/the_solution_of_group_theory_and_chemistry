@@ -22,6 +22,7 @@
 \usepackage[none]{hyphenat}	% 阻止长单词分在两行
 \usepackage{mathrsfs}	% 提供\mathscr字体
 \usepackage[version=4]{mhchem}
+\usepackage{multirow}
 
 \RequirePackage[many]{tcolorbox}
 \tcbset{
@@ -814,8 +815,6 @@
 		\end{tabular}
 		\end{center}
 		
-		!!!!!!!!!!!!!!!!!!!!!!!!!!
-		
 		For the irreducible representation $\Gamma^{E_2}$, the only two basis functions are
 		\begin{align*}
 			P^{E_2}\phi_1 &= \sum_{R} \chi^{E_2}(R) O_R \phi_1 = 2\phi_1 - \frac{\sqrt{5}+1}{2}(\phi_2 + \phi_5) + \frac{\sqrt{5}-1}{2}(\phi_3 + \phi_4). \\
@@ -927,11 +926,12 @@
 		
 		In the end, we conclude that for cyclopentadienyl radical, its ground state $\pi$-electron configuration is $(a_2)^2(e_1)^3$ and its delocalization energy is $2 \times 2.000 \beta + 3 \times 0.618 \beta - 5 \times 1.000 \beta = 0.854 \beta$, much larger than {\it trans}-1,3-butadiene ($0.472\beta$) but also much smaller than benzene ($2.000\beta$). 
 		
+		\item 5555555555555555   naphthalene
 		
-		
-		\item 5555555555555555
-		
+		Firstly, it is easy find that naphthalene belongs to the point group $\mathscr{D}_{\rm 2h}$, whose character table is shown in \Tableref{tab:chatab_5}.		
 		\begin{center}
+		\setlength{\abovecaptionskip}{0em}
+		\captionof{table}{The character table for the $\mathscr{D}_{\rm 2h}$ point group.}\label{tab:chatab_5}
 		\begin{tabular}{ccccccccc}\hline
 	$\mathscr{D}_{\rm 2h}$ & $E$ & $C_{2z}$ &	$C_{2y}$	& $C_{2x}$	&	$i$	&	$\sigma_{xy}$	&	$\sigma_{xz}$ &	$\sigma_{yz}$\\ \hline
 			$A_g$		&	1	&	1	&	1	&	1	&	1	&	1	&	1	&	1	\\
@@ -945,38 +945,36 @@
 		\end{tabular}
 		\end{center}
 		
-		
+		Secondly, we mark all carbon atoms as follows.
 		\begin{center}
+		\includegraphics[scale=1.0]{./structures/exercise_1/naphthalene/0.png}
+		\setlength{\abovecaptionskip}{-0.3em}
+		\captionof{figure}{The order of carbon atoms in naphthalene.}
+		\setlength{\belowcaptionskip}{-0.8em}
+		\end{center}	
+		
+		For $\pi$-electron atomic orbitals' representation $\Gamma^{\rm AO}$, its following characters is listed below.		
+		\begin{center}
+		\setlength{\abovecaptionskip}{-0.3em}
+		\captionof{table}{The character of the $\pi$-electron atomic orbitals' representation $\Gamma^{\rm AO}$.}
 		\begin{tabular}{ccccccccc}\hline
 	$\mathscr{D}_{\rm 2h}$	& $E$ & $C_{2z}$ &	$C_{2y}$	& $C_{2x}$	&	$i$	$\sigma_{xy}$	&	$\sigma_{xz}$	&	$\sigma_{xz}$ &	$\sigma_{yz}$  \\ \hline
 	$\chi^{\AO}(C_i)$	&	10	&	0	&	-2	&	0	&	0	&	-10	&	0	&	2	\\ \hline
-		\end{tabular}
+		\end{tabular}\vspace*{-0.5em}
 		\end{center}
-		
+		Relevant reduction coefficients are
 		\begin{align*}
-			a_g &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{A_g}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times 1 + 1 \times 0 \times 1 \\
-		 	&\hspace{14em}+ 1 \times 0 \times 1 + 1 \times (-10) \times 1 + 1 \times 0 \times 1 + 1 \times 2 \times 1 ] = 0,	\\
-		 	b_{1g} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{1g}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times (-1) + 1 \times 0 \times (-1) \\
-		 	&\hspace{14em}+ 1 \times 0 \times 1 + 1 \times (-10) \times 1 + 1 \times 0 \times (-1) + 1 \times 2 \times (-1) ] = 0,	\\
-		 	b_{2g} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{2g}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times 1 + 1 \times 0 \times (-1) \\
-		 	&\hspace{14em}+ 1 \times 0 \times 1 + 1 \times (-10) \times (-1) + 1 \times 0 \times 1 + 1 \times 2 \times (-1) ] = 2,	\\
-		 	b_{3g} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{3g}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times (-1) + 1 \times 0 \times 1 \\
-		 	&\hspace{14em}+ 1 \times 0 \times 1 + 1 \times (-10) \times (-1) + 1 \times 0 \times (-1) + 1 \times 2 \times 1 ] = 3,	\\
-		 	a_u &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{A_u}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times 1 + 1 \times 0 \times 1 \\
-		 	&\hspace{14em}+ 1 \times 0 \times (-1) + 1 \times (-10) \times (-1) + 1 \times 0 \times (-1) + 1 \times 2 \times (-1) ] = 2,	\\
-		 	b_{1u} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{1u}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times 1 + 1 \times (-2) \times (-1) + 1 \times 0 \times (-1) \\
-		 	&\hspace{14em}+ 1 \times 0 \times (-1) + 1 \times (-10) \times (-1) + 1 \times 0 \times 1 + 1 \times 2 \times 1 ] = 3,	\\
-		 	b_{2u} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{2u}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times 1 + 1 \times 0 \times (-1) \\
-		 	&\hspace{14em}+ 1 \times 0 \times (-1) + 1 \times (-10) \times 1 + 1 \times 0 \times (-1) + 1 \times 2 \times 1 ] = 0,	\\
-		 	b_{3u} &= \frac{1}{8} \sum_{R} \chi^{\AO}(R) \chi^{B_{3u}}(R) = \frac{1}{8} [ 1 \times 10 \times 1 + 1 \times 0 \times (-1) + 1 \times (-2) \times (-1) + 1 \times 0 \times 1 \\
-		 	&\hspace{14em}+ 1 \times 0 \times (-1) + 1 \times (-10) \times 1 + 1 \times 0 \times 1 + 1 \times 2 \times (-1) ] = 0.
+			a_g = 0,	\quad	b_{1g} = 0,	\quad	b_{2g} = 2,	\quad	b_{3g} = 3,	\quad a_u = 2,	\quad b_{1u} = 3,	\quad	b_{2u} = 0,	\quad	b_{3u} = 0.
 		\end{align*}
-		
+		Thus, we arrive at
 		\begin{equation*}
 			\Gamma^{\AO} = 2\Gamma^{B_{2g}} \oplus 3\Gamma^{B_{3g}} \oplus 2\Gamma^{A_u} \oplus 3\Gamma^{B_{1u}}.
 		\end{equation*}
+		We conclude that there are three basis functions in the irreducible representation $\Gamma^{B_{3g}}$ and $\Gamma^{B_{1u}}$, respectively. Thus, to describe the effect of $O_R$, three suitable $2 \orbp_z$ atomic orbitals $\phi_i$ is enough.
 		
 		\begin{center}
+		\setlength{\abovecaptionskip}{0em}
+		\captionof{table}{Transformation of $\phi_i$ under $O_R$ for the naphthalene.}
 		\begin{tabular}{ccccccccc}\hline
 	$\mathscr{D}_{\rm 5}$ & $E$ & $C_{2z}$ & $C_{2y}$ & $C_{2x}$	&	$i$	&	$\sigma_{xy}$ &	$\sigma_{xz}$	&	$\sigma_{yz}$\\ \hline
 			$\phi_1$	&	$\phi_1$	&	$\phi_6$	&	$-\phi_9$	&	$-\phi_4$	&	$-\phi_6$	&	$-\phi_1$	&	$\phi_4$	&	$\phi_9$		\\
@@ -985,9 +983,194 @@
 		\end{tabular}
 		\end{center}
 		
+		For the irreducible representation $\Gamma^{B_{2g}}$, the only two basis functions are
+		\begin{align*}
+			P^{B_{2g}}\phi_1 &= \sum_{R} \chi^{B_{2g}}(R) O_R \phi_1 = 2(\phi_1 + \phi_4 - \phi_6 - \phi_9 ), \\
+			P^{B_{2g}}\phi_2 &= \sum_{R} \chi^{B_{2g}}(R) O_R \phi_2 = 2(\phi_2 + \phi_3 - \phi_7 - \phi_8 ).	
+		\end{align*}
+		They can be normalized to
+		\begin{align*}
+			\phi^\prime_1 &= \frac{1}{2}(\phi_1 + \phi_4 - \phi_6 - \phi_9), \\
+			\phi^\prime_2 &= \frac{1}{2}(\phi_2 + \phi_3 - \phi_7 - \phi_8).
+		\end{align*}
+		Besides, it is easy to find that they are mutually orthogonal.
+		
+		Then, the effective Hamiltonian for $\pi$ electrons is
+		\begin{equation*}
+			H^\prime_{B_{2g}} = \begin{pmatrix}
+				\alpha	&	\beta	\\
+				\beta	&	\alpha+\beta
+				\end{pmatrix}.				
+		\end{equation*}
+		Its eigen equation is		
+		\begin{equation}
+			\det(\Hp_{B_{2g}}-\varepsilon^\pi \Sp_{B_{2g}}) = \beta^2 ( x^2 + x - 1 ) = 0.
+		\end{equation}
+		There are two roots,
+		\begin{equation}
+			x_1 = \frac{-1+\sqrt{5}}{2}, \quad x_2 = \frac{-1-\sqrt{5}}{2},
+		\end{equation}
+		which equal to
+		\begin{align}
+			\varepsilon^\pi_1 &= \alpha - \frac{\sqrt{5}-1}{2}\beta, \\
+			\varepsilon^\pi_2 &= \alpha + \frac{\sqrt{5}+1}{2}\beta.
+		\end{align}
+		
+		For $\Hp_{B_{2g}}-\varepsilon^\pi_1 \Sp_{B_{2g}}$, its reduced row echelon form is
+		\begin{equation*}
+			\begin{pmatrix}
+				1	& \frac{1+\sqrt{5}}{2}	\\	0	&	0
+			\end{pmatrix},
+		\end{equation*}
+		which means
+		\begin{equation*}
+			\Phi_1 = \frac{\sqrt{5}+1}{2}\phi^\prime_1 - \phi^\prime_2.
+		\end{equation*}
+		The sum of squares of coefficients is
+		\begin{equation*}
+			\sum_{i} c^2_i = \frac{ 5+\sqrt{5} }{2},
+		\end{equation*}
+		Thus, we know
+		\begin{align}
+			\Phi^\pi_1 &= \sqrt{ \frac{2}{5+\sqrt{5}} } \Phi_1 = \sqrt{ \frac{2}{5+\sqrt{5}} } \left[ \frac{\sqrt{5}+1}{2}\phi^\prime_1 - \phi^\prime_2 \right] = \sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} \phi^\prime_1 - \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} \phi^\prime_2	\notag \\
+			&= \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} (\phi_1 + \phi_4 - \phi_6 - \phi_9) - \frac 12 \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} (\phi_2 + \phi_3 - \phi_7 - \phi_8)\notag \\
+			&\approx 0.4253 \phi_1 - 0.2629 \phi_2 - 0.2629 \phi_3 + 0.4253 \phi_4 - 0.4253\phi_6 + 0.2629\phi_7 + 0.2629\phi_8 - 0.4253 \phi_9.
+		\end{align}
+		
+		Similarly, the reduced row echelon form of $\Hp_{B_{2g}}-\varepsilon^\pi_2 \Sp_{B_{2g}}$ is
+		\begin{equation*}
+			\begin{pmatrix}
+				1	& \frac{1-\sqrt{5}}{2}	\\	0	&	0
+			\end{pmatrix},
+		\end{equation*}		
+		which means
+		\begin{equation*}
+			\Phi_2 = \frac{\sqrt{5}-1}{2}\phi^\prime_1 + \phi^\prime_2.
+		\end{equation*}
+		And then,
+		\begin{align}
+			\Phi^\pi_2 &= \sqrt{ \frac{2}{5-\sqrt{5}} } \Phi_2 = \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} \phi^\prime_1 + \sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} \phi^\prime_2	\notag \\
+			&= \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}}(\phi_1 + \phi_4 - \phi_6 - \phi_9) + \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} (\phi_2 + \phi_3 - \phi_7 - \phi_8) \notag \\
+			&\approx 0.2629 \phi_1 + 0.4253 \phi_2 + 0.4253 \phi_3 + 0.2629 \phi_4 - 0.2629\phi_6 - 0.4253 \phi_7 - 0.4253 \phi_8 - 0.2629 \phi_9.
+		\end{align}
+
+		In conclusion, for the irreducible representation $\Gamma^{B_{2g}}$, relevant results are listed below.
+		
+		\begin{center}
+		\setlength{\abovecaptionskip}{0em}
+		\captionof{table}{The H{\"u}ckel MOs in the irreducible representation $\Gamma^{B_{2g}}$ of naphthalene.}
+		\begin{tabular}{ccccccc}\hline
+		order & eigenvalue & \multicolumn{5}{c}{eigenfunction} \\ \hline
+		\multirow{4}*{1}	&	\multirow{4}*{$\alpha-0.618\beta$}	&	$c_1$	&	$c_2$	&	$c_3$	&	$c_4$	&	$c_5$	\\	\cline{3-7}
+			&	&	0.4253 &	- 0.2629	&	- 0.2629	&	0.4253	&	0.0000	\\	\cline{3-7}
+			&	&	$c_6$	&	$c_7$	&	$c_8$	&	$c_9$	&	$c_{10}$	\\	\cline{3-7}
+			&	&	- 0.4253	&	0.2629	&	0.2629	&	- 0.4253	&	0.0000	\\	\hline
+		\multirow{4}*{2}	&	\multirow{4}*{$\alpha+1.618\beta$}	&	$c_1$	&	$c_2$	&	$c_3$	&	$c_4$	&	$c_5$	\\	\cline{3-7}
+			&	&	0.2629 &	0.4253	&	0.4253	&	0.2629	&	0.0000	\\	\cline{3-7}
+			&	&	$c_6$	&	$c_7$	&	$c_8$	&	$c_9$	&	$c_{10}$	\\	\cline{3-7}
+			&	&	- 0.2629	&	-0.4253	&	- 0.4253	&	-0.2629	&	0.0000	\\	\hline
+		\end{tabular}
+		\end{center}
+		
+		For the irreducible representation $\Gamma^{B_{3g}}$, the only three basis functions are
+		\begin{align*}
+			P^{B_{3g}}\phi_1 &= \sum_{R} \chi^{B_{3g}}(R) O_R \phi_1 = 2(\phi_1 - \phi_4 - \phi_6 + \phi_9 ), \\
+			P^{B_{3g}}\phi_2 &= \sum_{R} \chi^{B_{3g}}(R) O_R \phi_2 = 2(\phi_2 - \phi_3 - \phi_7 + \phi_8 ),  \\
+			P^{B_{3g}}\phi_5 &= \sum_{R} \chi^{B_{3g}}(R) O_R \phi_5 = 4(\phi_5- \phi_{10} ).
+		\end{align*}
+		They can be normalized to
+		\begin{align*}
+			\phi^\prime_3 &= \frac{1}{2}(\phi_1 - \phi_4 - \phi_6 + \phi_9), \\
+			\phi^\prime_4 &= \frac{1}{2}(\phi_2 - \phi_3 - \phi_7 + \phi_8), \\
+			\phi^\prime_5 &= \frac{1}{\sqrt{2}}(\phi_5 - \phi_{10}).
+		\end{align*}
+		Besides, it is easy to find that they are mutually orthogonal.
+		
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+		
+		Then, the effective Hamiltonian for $\pi$ electrons is
+		\begin{equation*}
+			H^\prime_{B_{3g}} = \begin{pmatrix}
+				\alpha	&	\beta	&	-\sqrt{2}\beta	\\
+				\beta	&	\alpha-\beta	&	0		\\
+				-\sqrt{2}\beta	&	0	&\alpha-\beta
+				\end{pmatrix}.				
+		\end{equation*}
+		Its eigen equation is		
+		\begin{equation*}
+			\det(\Hp_{B_{2g}}-\varepsilon^\pi \Sp_{B_{2g}}) = \beta^3 (x-1)( x^2 - x - 3 ) = 0.
+		\end{equation*}
+		There are three roots,
+		\begin{equation*}
+			x_3 = 1, \quad x_4 = \frac{1+\sqrt{13}}{2}, \quad x_2 = \frac{1-\sqrt{13}}{2},
+		\end{equation*}
+		which equal to
+		\begin{align}
+			\varepsilon^\pi_3 &= \alpha - \beta, \\
+			\varepsilon^\pi_4 &= \alpha - \frac{1+\sqrt{13}}{2}\beta, \\
+			\varepsilon^\pi_5 &= \alpha + \frac{\sqrt{13}-1}{2}\beta.
+		\end{align}
+		
+		For $\Hp_{B_{2g}}-\varepsilon^\pi_1 \Sp_{B_{2g}}$, its reduced row echelon form is
+		\begin{equation*}
+			\begin{pmatrix}
+				1	& \frac{1+\sqrt{5}}{2}	\\	0	&	0
+			\end{pmatrix},
+		\end{equation*}
+		which means
+		\begin{equation*}
+			\Phi_1 = \frac{\sqrt{5}+1}{2}\phi^\prime_1 - \phi^\prime_2.
+		\end{equation*}
+		The sum of squares of coefficients is
+		\begin{equation*}
+			\sum_{i} c^2_i = \frac{ 5+\sqrt{5} }{2},
+		\end{equation*}
+		Thus, we know
+		\begin{align}
+			\Phi^\pi_1 &= \sqrt{ \frac{2}{5+\sqrt{5}} } \Phi_1 = \sqrt{ \frac{2}{5+\sqrt{5}} } \left[ \frac{\sqrt{5}+1}{2}\phi^\prime_1 - \phi^\prime_2 \right] = \sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} \phi^\prime_1 - \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} \phi^\prime_2	\notag \\
+			&= \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} (\phi_1 + \phi_4 - \phi_6 - \phi_9) - \frac 12 \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} (\phi_2 + \phi_3 - \phi_7 - \phi_8)\notag \\
+			&\approx 0.4253 \phi_1 - 0.2629 \phi_2 - 0.2629 \phi_3 + 0.4253 \phi_4 - 0.4253\phi_6 + 0.2629\phi_7 + 0.2629\phi_8 - 0.4253 \phi_9.
+		\end{align}
+		
+		Similarly, the reduced row echelon form of $\Hp_{B_{2g}}-\varepsilon^\pi_2 \Sp_{B_{2g}}$ is
+		\begin{equation*}
+			\begin{pmatrix}
+				1	& \frac{1-\sqrt{5}}{2}	\\	0	&	0
+			\end{pmatrix},
+		\end{equation*}		
+		which means
+		\begin{equation*}
+			\Phi_2 = \frac{\sqrt{5}-1}{2}\phi^\prime_1 + \phi^\prime_2.
+		\end{equation*}
+		And then,
+		\begin{align}
+			\Phi^\pi_2 &= \sqrt{ \frac{2}{5-\sqrt{5}} } \Phi_2 = \sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} \phi^\prime_1 + \sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}} \phi^\prime_2	\notag \\
+			&= \frac{1}{2}\sqrt{\frac{\sqrt{5}+1}{2\sqrt{5}}}(\phi_1 + \phi_4 - \phi_6 - \phi_9) + \frac{1}{2}\sqrt{\frac{\sqrt{5}-1}{2\sqrt{5}}} (\phi_2 + \phi_3 - \phi_7 - \phi_8) \notag \\
+			&\approx 0.2629 \phi_1 + 0.4253 \phi_2 + 0.4253 \phi_3 + 0.2629 \phi_4 - 0.2629\phi_6 - 0.4253 \phi_7 - 0.4253 \phi_8 - 0.2629 \phi_9.
+		\end{align}
+
+		In conclusion, for the irreducible representation $\Gamma^{B_{2g}}$, relevant results are listed below.
+		
+		\begin{center}
+		\setlength{\abovecaptionskip}{0em}
+		\captionof{table}{The H{\"u}ckel MOs in the irreducible representation $\Gamma^{B_{2g}}$ of naphthalene.}
+		\begin{tabular}{ccccccc}\hline
+		order & eigenvalue & \multicolumn{5}{c}{eigenfunction} \\ \hline
+		\multirow{4}*{1}	&	\multirow{4}*{$\alpha-0.618\beta$}	&	$c_1$	&	$c_2$	&	$c_3$	&	$c_4$	&	$c_5$	\\	\cline{3-7}
+			&	&	0.4253 &	- 0.2629	&	- 0.2629	&	0.4253	&	0.0000	\\	\cline{3-7}
+			&	&	$c_6$	&	$c_7$	&	$c_8$	&	$c_9$	&	$c_{10}$	\\	\cline{3-7}
+			&	&	- 0.4253	&	0.2629	&	0.2629	&	- 0.4253	&	0.0000	\\	\hline
+		\multirow{4}*{2}	&	\multirow{4}*{$\alpha+1.618\beta$}	&	$c_1$	&	$c_2$	&	$c_3$	&	$c_4$	&	$c_5$	\\	\cline{3-7}
+			&	&	0.2629 &	0.4253	&	0.4253	&	0.2629	&	0.0000	\\	\cline{3-7}
+			&	&	$c_6$	&	$c_7$	&	$c_8$	&	$c_9$	&	$c_{10}$	\\	\cline{3-7}
+			&	&	- 0.2629	&	-0.4253	&	- 0.4253	&	-0.2629	&	0.0000	\\	\hline
+		\end{tabular}
+		\end{center}
 		
 		
-		\item 66666666666666666
+		
+		
+		\item 66666666666666666	phenanthrene
 		
 		\begin{center}
 		\begin{tabular}{ccccc}\hline
@@ -1006,7 +1189,7 @@
 	$\chi^{\AO}(C_i)$	&	14	&	0	&	0	&	-14	\\ \hline
 		\end{tabular}
 		\end{center}
-		
+			
 		\begin{align*}
 		a_1 &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{A_1}(R) = \frac{1}{4} \left[ 1 \times 14 \times 1 + 1 \times 0 \times 1 + 1 \times 0 \times 1 + 1 \times (-14) \times 1 \right] = 0, \\		
 		a_2 &= \frac{1}{4} \sum_{R} \chi^{\AO}(R) \chi^{A_2}(R) = \frac{1}{4} \left[ 1 \times 14 \times 1 + 1 \times 0 \times 1 + 1 \times 0 \times (-1) + 1 \times (-14) \times (-1) \right] = 7, \\
