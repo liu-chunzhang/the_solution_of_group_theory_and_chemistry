@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  30 SEP 2024 18:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  30 SEP 2024 18:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1064,7 +1064,7 @@ input line 1627.
 File: ./structures/exercise_1/phenanthrene/996.png Graphic file (type png)
 <use ./structures/exercise_1/phenanthrene/996.png>
 Package pdftex.def Info: ./structures/exercise_1/phenanthrene/996.png  used on 
-input line 1886.
+input line 1889.
 (pdftex.def)             Requested size: 267.02194pt x 219.51958pt.
  [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1103,7 +1103,7 @@ Package rerunfilecheck Info: File `solution.out' has not changed.
 Here is how much of TeX's memory you used:
  27580 strings out of 474116
  568705 string characters out of 5743688
- 2346187 words of memory out of 5000000
+ 2347187 words of memory out of 5000000
  49381 multiletter control sequences out of 15000+600000
  561121 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1123,7 +1123,7 @@ ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on solution.pdf (31 pages, 1100164 bytes).
+Output written on solution.pdf (31 pages, 1100589 bytes).
 PDF statistics:
  459 PDF objects out of 1000 (max. 8388607)
  326 compressed objects within 4 object streams
