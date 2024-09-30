@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  30 SEP 2024 20:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  30 SEP 2024 21:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1064,8 +1064,99 @@ input line 1627.
 File: ./structures/exercise_1/phenanthrene/996.png Graphic file (type png)
 <use ./structures/exercise_1/phenanthrene/996.png>
 Package pdftex.def Info: ./structures/exercise_1/phenanthrene/996.png  used on 
-input line 1889.
+input line 1888.
 (pdftex.def)             Requested size: 267.02194pt x 219.51958pt.
+<./structures/exercise_1/phenanthrene/8.png, id=50, 133.6995pt x 90.3375pt>
+File: ./structures/exercise_1/phenanthrene/8.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/8.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/8.png  used on in
+put line 2117.
+(pdftex.def)             Requested size: 88.24193pt x 59.62292pt.
+<./structures/exercise_1/phenanthrene/1.png, id=51, 133.4586pt x 90.5784pt>
+File: ./structures/exercise_1/phenanthrene/1.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/1.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/1.png  used on in
+put line 2122.
+(pdftex.def)             Requested size: 88.08293pt x 59.78192pt.
+<./structures/exercise_1/phenanthrene/9.png, id=52, 133.6995pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/9.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/9.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/9.png  used on in
+put line 2128.
+(pdftex.def)             Requested size: 88.24193pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/10.png, id=53, 133.9404pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/10.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/10.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/10.png  used on i
+nput line 2133.
+(pdftex.def)             Requested size: 88.40092pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/2.png, id=54, 133.4586pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/2.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/2.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/2.png  used on in
+put line 2139.
+(pdftex.def)             Requested size: 88.08293pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/3.png, id=55, 133.4586pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/3.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/3.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/3.png  used on in
+put line 2144.
+(pdftex.def)             Requested size: 88.08293pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/11.png, id=56, 133.9404pt x 90.3375pt>
+File: ./structures/exercise_1/phenanthrene/11.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/11.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/11.png  used on i
+nput line 2150.
+(pdftex.def)             Requested size: 88.40092pt x 59.62292pt.
+<./structures/exercise_1/phenanthrene/4.png, id=57, 133.4586pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/4.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/4.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/4.png  used on in
+put line 2155.
+(pdftex.def)             Requested size: 88.08293pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/12.png, id=58, 133.9404pt x 89.8557pt>
+File: ./structures/exercise_1/phenanthrene/12.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/12.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/12.png  used on i
+nput line 2161.
+(pdftex.def)             Requested size: 88.40092pt x 59.30493pt.
+<./structures/exercise_1/phenanthrene/13.png, id=59, 133.9404pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/13.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/13.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/13.png  used on i
+nput line 2166.
+(pdftex.def)             Requested size: 88.40092pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/5.png, id=60, 133.4586pt x 90.5784pt>
+File: ./structures/exercise_1/phenanthrene/5.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/5.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/5.png  used on in
+put line 2172.
+(pdftex.def)             Requested size: 88.08293pt x 59.78192pt.
+<./structures/exercise_1/phenanthrene/6.png, id=61, 133.4586pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/6.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/6.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/6.png  used on in
+put line 2177.
+(pdftex.def)             Requested size: 88.08293pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/14.png, id=62, 133.6995pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/14.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/14.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/14.png  used on i
+nput line 2183.
+(pdftex.def)             Requested size: 88.24193pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/7.png, id=63, 133.4586pt x 90.8193pt>
+File: ./structures/exercise_1/phenanthrene/7.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/7.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/7.png  used on in
+put line 2188.
+(pdftex.def)             Requested size: 88.08293pt x 59.94092pt.
+<./structures/exercise_1/phenanthrene/998.png, id=64, 121.6545pt x 182.03006pt>
+
+File: ./structures/exercise_1/phenanthrene/998.png Graphic file (type png)
+<use ./structures/exercise_1/phenanthrene/998.png>
+Package pdftex.def Info: ./structures/exercise_1/phenanthrene/998.png  used on 
+input line 2202.
+(pdftex.def)             Requested size: 121.65419pt x 182.0296pt.
  [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./structures/exercise_1/trans-1,3-butadiene/0.png>] [2] [3] [4] [5 <./structu
@@ -1092,7 +1183,16 @@ structures/exercise_1/naphthalene/6.png> <./structures/exercise_1/naphthalene/4
 _1/phenanthrene/0.png>] [23 <./structures/exercise_1/phenanthrene/997.png>]
 [24{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
 c}] [25] [26] [27] [28 <./structures/exercise_1/phenanthrene/996.png>] [29]
-[30] [31] (./solution.aux)
+[30] [31 <./structures/exercise_1/phenanthrene/8.png> <./structures/exercise_1/
+phenanthrene/1.png> <./structures/exercise_1/phenanthrene/9.png> <./structures/
+exercise_1/phenanthrene/10.png> <./structures/exercise_1/phenanthrene/2.png> <.
+/structures/exercise_1/phenanthrene/3.png> <./structures/exercise_1/phenanthren
+e/11.png> <./structures/exercise_1/phenanthrene/4.png> <./structures/exercise_1
+/phenanthrene/12.png> <./structures/exercise_1/phenanthrene/13.png> <./structur
+es/exercise_1/phenanthrene/5.png> <./structures/exercise_1/phenanthrene/6.png> 
+<./structures/exercise_1/phenanthrene/14.png> <./structures/exercise_1/phenanth
+rene/7.png>] [32 <./structures/exercise_1/phenanthrene/998.png>]
+(./solution.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1101,10 +1201,10 @@ Package rerunfilecheck Info: File `solution.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27579 strings out of 474116
- 568689 string characters out of 5743688
- 2347187 words of memory out of 5000000
- 49381 multiletter control sequences out of 15000+600000
+ 27690 strings out of 474116
+ 573976 string characters out of 5743688
+ 2351187 words of memory out of 5000000
+ 49490 multiletter control sequences out of 15000+600000
  561121 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,94p,670b,1226s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1123,10 +1223,10 @@ ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on solution.pdf (31 pages, 1100531 bytes).
+Output written on solution.pdf (32 pages, 1866339 bytes).
 PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
- 325 compressed objects within 4 object streams
- 161 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 495 PDF objects out of 1000 (max. 8388607)
+ 331 compressed objects within 4 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 253 words of extra memory for PDF output out of 10000 (max. 10000000)
 
